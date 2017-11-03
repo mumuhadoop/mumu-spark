@@ -1,0 +1,135 @@
+2017-10-27 16:41:21,784 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:41:22,321 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:41:22,348 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:41:22,348 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:41:22,349 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:41:22,350 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:41:22,350 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:43:45,142 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:43:45,840 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:43:45,867 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:43:45,868 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:43:45,869 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:43:45,869 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:43:45,870 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:43:46,434 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 59923.
+2017-10-27 16:46:49,440 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:46:50,185 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:46:50,213 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:46:50,214 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:46:50,214 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:46:50,215 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:46:50,215 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:46:50,776 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 60264.
+2017-10-27 16:46:50,800 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2017-10-27 16:46:50,821 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2017-10-27 16:46:50,825 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2017-10-27 16:46:50,826 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2017-10-27 16:46:50,838 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-3bdef976-e53d-49b1-8e47-ab4948b71dac
+2017-10-27 16:46:50,896 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2017-10-27 16:46:50,947 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2017-10-27 16:46:51,040 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @2516ms
+2017-10-27 16:46:51,093 INFO[org.apache.spark.storage.DiskBlockManager:54] - Shutdown hook called
+2017-10-27 16:46:51,097 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2017-10-27 16:46:51,098 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-95069915-5825-4c40-b04f-288f2cffc213\userFiles-87e7fa02-8b61-4c78-b51b-15349c5d059b
+2017-10-27 16:46:51,100 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-95069915-5825-4c40-b04f-288f2cffc213
+2017-10-27 16:49:52,375 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:49:53,030 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:49:53,056 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:49:53,058 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:49:53,058 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:49:53,059 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:49:53,059 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:49:53,590 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 60532.
+2017-10-27 16:49:53,609 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2017-10-27 16:49:53,629 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2017-10-27 16:49:53,633 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2017-10-27 16:49:53,634 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2017-10-27 16:49:53,647 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-68638be9-6fc1-45cc-9da5-4896421a8d24
+2017-10-27 16:49:53,698 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2017-10-27 16:49:53,744 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2017-10-27 16:49:53,830 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @2283ms
+2017-10-27 16:49:53,882 INFO[org.apache.spark.storage.DiskBlockManager:54] - Shutdown hook called
+2017-10-27 16:49:53,887 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2017-10-27 16:49:53,888 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-9b3d17a4-a7e7-4f2f-b08e-ab35636d2de5
+2017-10-27 16:49:53,891 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-9b3d17a4-a7e7-4f2f-b08e-ab35636d2de5\userFiles-6ce2c108-c924-4e06-94f7-6c45cd4cafae
+2017-10-27 16:50:14,379 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:50:14,897 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:50:14,914 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:50:14,915 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:50:14,915 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:50:14,915 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:50:14,916 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:50:15,412 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 60563.
+2017-10-27 16:50:15,427 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2017-10-27 16:50:15,442 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2017-10-27 16:50:15,446 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2017-10-27 16:50:15,446 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2017-10-27 16:50:15,455 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-5ec28979-6dd3-4f48-939d-9469a98a5185
+2017-10-27 16:50:15,498 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2017-10-27 16:50:15,536 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2017-10-27 16:50:15,599 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @1877ms
+2017-10-27 16:50:15,643 INFO[org.apache.spark.storage.DiskBlockManager:54] - Shutdown hook called
+2017-10-27 16:50:15,647 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2017-10-27 16:50:15,648 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-62a08b1c-0de8-409d-bbe3-3c42a8944079\userFiles-fe06360f-4738-4fe6-8800-1032673d8b91
+2017-10-27 16:50:15,649 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-62a08b1c-0de8-409d-bbe3-3c42a8944079
+2017-10-27 16:51:05,509 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:51:06,086 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:51:06,103 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:51:06,104 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:51:06,104 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:51:06,105 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:51:06,105 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:51:06,597 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 60610.
+2017-10-27 16:51:06,613 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2017-10-27 16:51:06,629 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2017-10-27 16:51:06,632 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2017-10-27 16:51:06,633 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2017-10-27 16:51:06,642 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-c532e7fd-bea8-4c73-8351-c6d417660ad2
+2017-10-27 16:51:06,687 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2017-10-27 16:51:06,725 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2017-10-27 16:51:06,788 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @1973ms
+2017-10-27 16:51:06,830 INFO[org.apache.spark.storage.DiskBlockManager:54] - Shutdown hook called
+2017-10-27 16:51:06,834 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2017-10-27 16:51:06,835 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-58a23dab-4d4e-468f-87fe-3df852947f2d
+2017-10-27 16:51:06,839 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-58a23dab-4d4e-468f-87fe-3df852947f2d\userFiles-04a7c67e-86c1-47b4-808f-2d4f5a25c06b
+2017-10-27 16:52:51,888 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:52:52,425 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:52:52,445 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:52:52,446 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:52:52,446 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:52:52,446 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:52:52,447 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:52:52,960 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 60688.
+2017-10-27 16:52:52,976 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2017-10-27 16:52:52,990 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2017-10-27 16:52:52,993 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2017-10-27 16:52:52,994 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2017-10-27 16:52:53,002 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-26ae4032-c48f-4dc4-bd48-661635498675
+2017-10-27 16:52:53,047 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2017-10-27 16:52:53,092 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2017-10-27 16:52:53,158 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @1966ms
+2017-10-27 16:52:53,201 INFO[org.apache.spark.storage.DiskBlockManager:54] - Shutdown hook called
+2017-10-27 16:52:53,205 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2017-10-27 16:52:53,205 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-31c7c464-06a7-473c-80cb-1ac22b75418a
+2017-10-27 16:52:53,209 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-31c7c464-06a7-473c-80cb-1ac22b75418a\userFiles-0a347777-542a-463b-89b9-5196f01bd738
+2017-10-27 16:54:53,562 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2017-10-27 16:54:54,128 INFO[org.apache.spark.SparkContext:54] - Submitted application: quickStart
+2017-10-27 16:54:54,144 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2017-10-27 16:54:54,145 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2017-10-27 16:54:54,145 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2017-10-27 16:54:54,145 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2017-10-27 16:54:54,146 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2017-10-27 16:54:54,657 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 60785.
+2017-10-27 16:54:54,672 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2017-10-27 16:54:54,687 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2017-10-27 16:54:54,690 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2017-10-27 16:54:54,690 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2017-10-27 16:54:54,698 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-082b7284-4729-43f1-904e-aefe5ad5fd5b
+2017-10-27 16:54:54,745 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2017-10-27 16:54:54,788 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2017-10-27 16:54:54,858 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @1986ms
+2017-10-27 16:54:54,906 INFO[org.apache.spark.storage.DiskBlockManager:54] - Shutdown hook called
+2017-10-27 16:54:54,911 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2017-10-27 16:54:54,912 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-a623bd5a-0017-4f66-91f5-3eceb6afc6ba
+2017-10-27 16:54:54,916 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-a623bd5a-0017-4f66-91f5-3eceb6afc6ba\userFiles-9ddbbf19-33de-4e1f-ac16-35d03955a671
