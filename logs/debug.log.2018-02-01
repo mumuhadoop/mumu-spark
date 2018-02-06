@@ -1,0 +1,197 @@
+2018-02-01 17:02:36,131 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2018-02-01 17:02:36,668 INFO[org.apache.spark.SparkContext:54] - Submitted application: mumuSpark
+2018-02-01 17:02:36,713 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2018-02-01 17:02:36,714 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2018-02-01 17:02:36,715 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2018-02-01 17:02:36,716 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2018-02-01 17:02:36,717 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2018-02-01 17:02:37,273 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 52943.
+2018-02-01 17:02:37,299 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2018-02-01 17:02:37,350 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2018-02-01 17:02:37,354 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-02-01 17:02:37,355 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2018-02-01 17:02:37,369 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-acff42e7-8c89-4dc1-a5b8-9849f8d7a38e
+2018-02-01 17:02:37,401 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2018-02-01 17:02:37,445 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2018-02-01 17:02:37,545 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @2847ms
+2018-02-01 17:02:37,628 INFO[org.spark_project.jetty.server.Server:345] - jetty-9.3.z-SNAPSHOT
+2018-02-01 17:02:37,642 INFO[org.spark_project.jetty.server.Server:403] - Started @2944ms
+2018-02-01 17:02:37,667 INFO[org.spark_project.jetty.server.AbstractConnector:270] - Started ServerConnector@51ef212b{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-01 17:02:37,667 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'SparkUI' on port 4040.
+2018-02-01 17:02:37,694 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5b64c4b7{/jobs,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,695 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@62fad19{/jobs/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,696 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@74cadd41{/jobs/job,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,697 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@4f2613d1{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,698 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@65a4798f{/stages,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,698 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@878452d{/stages/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,701 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@4c51bb7{/stages/stage,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,703 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@773cbf4f{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,705 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@665e9289{/stages/pool,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,705 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@6f603e89{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,706 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@350ec41e{/storage,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,706 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@71984c3{/storage/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,707 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5536379e{/storage/rdd,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,707 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@6c8bca63{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,708 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@470a696f{/environment,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,709 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@292d1c71{/environment/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,710 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@3f1c5af9{/executors,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,710 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5ddabb18{/executors/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,711 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@63192798{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,712 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@58e6d4b8{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,724 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@376a312c{/static,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,725 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@34a1d21f{/,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,726 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@73c60324{/api,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,726 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@4e517165{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,727 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@6a66a204{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-02-01 17:02:37,729 INFO[org.apache.spark.ui.SparkUI:54] - Bound SparkUI to 0.0.0.0, and started at http://192.168.11.26:4040
+2018-02-01 17:02:37,830 INFO[org.apache.spark.executor.Executor:54] - Starting executor ID driver on host localhost
+2018-02-01 17:02:37,859 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52956.
+2018-02-01 17:02:37,860 INFO[org.apache.spark.network.netty.NettyBlockTransferService:54] - Server created on 192.168.11.26:52956
+2018-02-01 17:02:37,862 INFO[org.apache.spark.storage.BlockManager:54] - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-02-01 17:02:37,864 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registering BlockManager BlockManagerId(driver, 192.168.11.26, 52956, None)
+2018-02-01 17:02:37,867 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Registering block manager 192.168.11.26:52956 with 631.8 MB RAM, BlockManagerId(driver, 192.168.11.26, 52956, None)
+2018-02-01 17:02:37,870 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registered BlockManager BlockManagerId(driver, 192.168.11.26, 52956, None)
+2018-02-01 17:02:37,870 INFO[org.apache.spark.storage.BlockManager:54] - Initialized BlockManager: BlockManagerId(driver, 192.168.11.26, 52956, None)
+2018-02-01 17:02:38,047 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@3d526ad9{/metrics/json,null,AVAILABLE,@Spark}
+2018-02-01 17:02:38,075 INFO[org.apache.spark.SparkContext:54] - Added JAR hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar at hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar with timestamp 1517475758075
+2018-02-01 17:02:38,514 INFO[org.apache.spark.SparkContext:54] - Starting job: collect at SparkMaxTemperature.java:35
+2018-02-01 17:02:38,542 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 0 (collect at SparkMaxTemperature.java:35) with 2 output partitions
+2018-02-01 17:02:38,542 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 0 (collect at SparkMaxTemperature.java:35)
+2018-02-01 17:02:38,543 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-01 17:02:38,545 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-01 17:02:38,557 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 0 (MapPartitionsRDD[1] at map at SparkMaxTemperature.java:24), which has no missing parents
+2018-02-01 17:02:38,749 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0 stored as values in memory (estimated size 2.3 KB, free 631.8 MB)
+2018-02-01 17:02:38,801 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1475.0 B, free 631.8 MB)
+2018-02-01 17:02:38,804 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_0_piece0 in memory on 192.168.11.26:52956 (size: 1475.0 B, free: 631.8 MB)
+2018-02-01 17:02:38,809 INFO[org.apache.spark.SparkContext:54] - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+2018-02-01 17:02:38,835 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at map at SparkMaxTemperature.java:24) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-01 17:02:38,837 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 0.0 with 2 tasks
+2018-02-01 17:02:38,896 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4851 bytes)
+2018-02-01 17:02:38,900 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 4859 bytes)
+2018-02-01 17:02:38,904 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 0.0 (TID 1)
+2018-02-01 17:02:38,904 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 0.0 (TID 0)
+2018-02-01 17:02:38,909 INFO[org.apache.spark.executor.Executor:54] - Fetching hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar with timestamp 1517475758075
+2018-02-01 17:02:46,828 INFO[org.apache.spark.util.Utils:54] - Fetching hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar to C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd\userFiles-a3557006-0b99-4b9a-bd2d-a303bef8164d\fetchFileTemp4799185197577973633.tmp
+2018-02-01 17:02:47,265 INFO[org.apache.spark.executor.Executor:54] - Adding file:/C:/Users/Administrator/AppData/Local/Temp/spark-50b42aac-27bd-408d-8da9-168d37f006cd/userFiles-a3557006-0b99-4b9a-bd2d-a303bef8164d/mumu-spark.jar to class loader
+2018-02-01 17:02:47,322 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 0.0 (TID 0). 818 bytes result sent to driver
+2018-02-01 17:02:47,322 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 0.0 (TID 1). 780 bytes result sent to driver
+2018-02-01 17:02:47,330 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 0.0 (TID 1) in 8430 ms on localhost (executor driver) (1/2)
+2018-02-01 17:02:47,332 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 0.0 (TID 0) in 8459 ms on localhost (executor driver) (2/2)
+2018-02-01 17:02:47,333 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2018-02-01 17:02:47,336 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 0 (collect at SparkMaxTemperature.java:35) finished in 8.479 s
+2018-02-01 17:02:47,341 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 0 finished: collect at SparkMaxTemperature.java:35, took 8.825471 s
+2018-02-01 17:02:47,355 INFO[org.apache.spark.SparkContext:54] - Starting job: reduce at SparkMaxTemperature.java:37
+2018-02-01 17:02:47,356 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 1 (reduce at SparkMaxTemperature.java:37) with 2 output partitions
+2018-02-01 17:02:47,356 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 1 (reduce at SparkMaxTemperature.java:37)
+2018-02-01 17:02:47,356 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-01 17:02:47,356 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-01 17:02:47,357 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 1 (MapPartitionsRDD[1] at map at SparkMaxTemperature.java:24), which has no missing parents
+2018-02-01 17:02:47,359 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1 stored as values in memory (estimated size 2.5 KB, free 631.8 MB)
+2018-02-01 17:02:47,362 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1_piece0 stored as bytes in memory (estimated size 1492.0 B, free 631.8 MB)
+2018-02-01 17:02:47,363 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_1_piece0 in memory on 192.168.11.26:52956 (size: 1492.0 B, free: 631.8 MB)
+2018-02-01 17:02:47,363 INFO[org.apache.spark.SparkContext:54] - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+2018-02-01 17:02:47,364 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[1] at map at SparkMaxTemperature.java:24) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-01 17:02:47,365 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 1.0 with 2 tasks
+2018-02-01 17:02:47,366 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 1.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 4851 bytes)
+2018-02-01 17:02:47,366 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 1.0 (TID 3, localhost, executor driver, partition 1, PROCESS_LOCAL, 4859 bytes)
+2018-02-01 17:02:47,366 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 1.0 (TID 3)
+2018-02-01 17:02:47,366 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 1.0 (TID 2)
+2018-02-01 17:02:47,372 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 1.0 (TID 3). 669 bytes result sent to driver
+2018-02-01 17:02:47,372 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 1.0 (TID 2). 669 bytes result sent to driver
+2018-02-01 17:02:47,373 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 1.0 (TID 3) in 7 ms on localhost (executor driver) (1/2)
+2018-02-01 17:02:47,373 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 1.0 (TID 2) in 8 ms on localhost (executor driver) (2/2)
+2018-02-01 17:02:47,373 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2018-02-01 17:02:47,373 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 1 (reduce at SparkMaxTemperature.java:37) finished in 0.008 s
+2018-02-01 17:02:47,374 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 1 finished: reduce at SparkMaxTemperature.java:37, took 0.018489 s
+2018-02-01 17:02:47,381 INFO[org.spark_project.jetty.server.AbstractConnector:310] - Stopped Spark@51ef212b{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-01 17:02:47,383 INFO[org.apache.spark.ui.SparkUI:54] - Stopped Spark web UI at http://192.168.11.26:4040
+2018-02-01 17:02:47,392 INFO[org.apache.spark.MapOutputTrackerMasterEndpoint:54] - MapOutputTrackerMasterEndpoint stopped!
+2018-02-01 17:02:47,401 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore cleared
+2018-02-01 17:02:47,402 INFO[org.apache.spark.storage.BlockManager:54] - BlockManager stopped
+2018-02-01 17:02:47,406 INFO[org.apache.spark.storage.BlockManagerMaster:54] - BlockManagerMaster stopped
+2018-02-01 17:02:47,409 INFO[org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54] - OutputCommitCoordinator stopped!
+2018-02-01 17:02:47,412 WARN[org.apache.spark.SparkEnv:87] - Exception while deleting Spark temp dir: C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd\userFiles-a3557006-0b99-4b9a-bd2d-a303bef8164d
+java.io.IOException: Failed to delete: C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd\userFiles-a3557006-0b99-4b9a-bd2d-a303bef8164d
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1031)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:103)
+	at org.apache.spark.SparkContext$$anonfun$stop$11.apply$mcV$sp(SparkContext.scala:1937)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1317)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1936)
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:654)
+	at org.apache.spark.api.java.JavaSparkContext.close(JavaSparkContext.scala:657)
+	at com.lovecws.mumu.spark.rdd.temperature.SparkMaxTemperature.maxTemperature(SparkMaxTemperature.java:45)
+	at com.lovecws.mumu.spark.rdd.temperature.maxTemperatureTest.maxTemperature(maxTemperatureTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018-02-01 17:02:47,414 INFO[org.apache.spark.SparkContext:54] - Successfully stopped SparkContext
+2018-02-01 17:02:47,417 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2018-02-01 17:02:47,418 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd
+2018-02-01 17:02:47,422 ERROR[org.apache.spark.util.ShutdownHookManager:91] - Exception while deleting Spark temp dir: C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd
+java.io.IOException: Failed to delete: C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1031)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1.apply$mcV$sp(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1954)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-01 17:02:47,424 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd\userFiles-a3557006-0b99-4b9a-bd2d-a303bef8164d
+2018-02-01 17:02:47,426 ERROR[org.apache.spark.util.ShutdownHookManager:91] - Exception while deleting Spark temp dir: C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd\userFiles-a3557006-0b99-4b9a-bd2d-a303bef8164d
+java.io.IOException: Failed to delete: C:\Users\Administrator\AppData\Local\Temp\spark-50b42aac-27bd-408d-8da9-168d37f006cd\userFiles-a3557006-0b99-4b9a-bd2d-a303bef8164d
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1031)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1.apply$mcV$sp(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1954)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)

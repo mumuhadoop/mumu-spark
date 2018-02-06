@@ -11,6 +11,7 @@ import org.apache.spark.sql.SparkSession;
 import org.apache.spark.streaming.Durations;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -31,27 +32,45 @@ public class MumuSparkConfiguration {
 
     public synchronized JavaSparkContext javaSparkContext() {
         if (sparkContext == null) {
+            String master = getMaster();
             SparkConf conf = new SparkConf();
             conf.setAppName("mumuSpark");
-            conf.setMaster(getMaster());
+            conf.setMaster(master);
             conf.set("spark.streaming.receiver.writeAheadLogs.enable", "true");
             conf.set("spark.driver.allowMultipleContexts", "true");
             sparkContext = new JavaSparkContext(conf);
+            if (!master.contains("local")) {
+                sparkContext.addJar(HADOOP_URL + "/mumu/spark/jar/mumu-spark.jar");
+            }
         }
-        sparkContext.addJar(HADOOP_URL + "/mumu/spark/jar/mumu-spark.jar");
         return sparkContext;
     }
 
     public synchronized JavaStreamingContext javaStreamingContext(long batchDuration) {
-        JavaStreamingContext streamingContext = new JavaStreamingContext(new MumuSparkConfiguration().javaSparkContext(), Durations.seconds(batchDuration));
+        JavaStreamingContext streamingContext = new JavaStreamingContext(javaSparkContext(), Durations.seconds(batchDuration));
         return streamingContext;
     }
 
     public synchronized SQLContext sqlContext() {
+        String userDir = System.getProperty("user.dir");
         SparkSession sparkSession = SparkSession
                 .builder()
                 .master(getMaster())
                 .appName("mumuSpark")
+                .config("spark.sql.warehouse.dir", userDir + File.separator + "spark-warehouse")
+                .getOrCreate();
+        SQLContext sqlContext = new SQLContext(sparkSession);
+        return sqlContext;
+    }
+
+    public synchronized SQLContext hiveContext() {
+        String userDir = System.getProperty("user.dir");
+        SparkSession sparkSession = SparkSession
+                .builder()
+                .master(getMaster())
+                .appName("mumuSpark")
+                .config("spark.sql.warehouse.dir", userDir + File.separator + "hive-warehouse")
+                .enableHiveSupport()
                 .getOrCreate();
         SQLContext sqlContext = new SQLContext(sparkSession);
         return sqlContext;
@@ -63,6 +82,10 @@ public class MumuSparkConfiguration {
             return spark_master;
         }
         return SPARK_MASTER;
+    }
+
+    public String hadoopAddress() {
+        return HADOOP_URL;
     }
 
     /**
@@ -77,7 +100,8 @@ public class MumuSparkConfiguration {
             for (FileStatus fileStatus : fileStatuses) {
                 System.out.println(fileStatus);
             }
-            distributedFileSystem.copyFromLocalFile(true, true, new Path("E:\\IntelliJWorkspaceMumu\\mumu-spark\\target\\mumu-spark.jar"), new Path(HADOOP_URL + "/mumu/spark/jar/"));
+            String userDir = System.getProperty("user.dir");
+            distributedFileSystem.copyFromLocalFile(true, true, new Path(userDir + "/target/mumu-spark.jar"), new Path(HADOOP_URL + "/mumu/spark/jar/"));
         } catch (IOException e) {
             e.printStackTrace();
         } catch (URISyntaxException e) {

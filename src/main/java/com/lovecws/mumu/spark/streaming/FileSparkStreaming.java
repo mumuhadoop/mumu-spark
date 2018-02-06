@@ -37,7 +37,6 @@ public class FileSparkStreaming implements Serializable {
     public void fileStreaming(String textFile, long batchDuration) {
         JavaStreamingContext streamingContext = new MumuSparkConfiguration().javaStreamingContext(batchDuration);
         JavaDStream lines = streamingContext.textFileStream(textFile);
-
         lines.print();
         JavaDStream<String> words = lines.flatMap(new FlatMapFunction<Object, Iterator>() {
             @Override

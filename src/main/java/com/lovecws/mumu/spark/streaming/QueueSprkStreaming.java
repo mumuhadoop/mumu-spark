@@ -52,6 +52,7 @@ public class QueueSprkStreaming implements Serializable {
         streamingContext.start();
         try {
             streamingContext.awaitTermination();
+            streamingContext.close();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

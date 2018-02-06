@@ -34,6 +34,12 @@ public class MumuSparkConfigurationTest {
     }
 
     @Test
+    public void hiveContext() {
+        SQLContext hiveContext = sparkConfiguration.hiveContext();
+        System.out.println(hiveContext);
+    }
+
+    @Test
     public void uploadJar() {
         sparkConfiguration.uploadJar();
     }

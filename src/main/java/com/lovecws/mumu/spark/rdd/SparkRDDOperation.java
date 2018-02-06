@@ -27,6 +27,7 @@ public class SparkRDDOperation {
         JavaSparkContext sparkContext = new MumuSparkConfiguration().javaSparkContext();
         JavaRDD<Object> javaRDD = sparkContext.parallelize(list);
         javaRDD.persist(StorageLevel.MEMORY_ONLY());
+        javaRDD.cache();
         System.out.println("count " + javaRDD.count());
         System.out.println("javaRDD " + StringUtils.join(javaRDD.collect()));
         sparkContext.close();

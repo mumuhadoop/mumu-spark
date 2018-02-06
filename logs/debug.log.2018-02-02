@@ -1,0 +1,437 @@
+2018-02-02 09:45:07,457 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2018-02-02 09:45:08,005 INFO[org.apache.spark.SparkContext:54] - Submitted application: mumuSpark
+2018-02-02 09:45:08,047 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2018-02-02 09:45:08,048 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2018-02-02 09:45:08,049 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2018-02-02 09:45:08,050 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2018-02-02 09:45:08,051 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2018-02-02 09:45:08,622 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 65258.
+2018-02-02 09:45:08,648 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2018-02-02 09:45:08,704 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2018-02-02 09:45:08,709 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-02-02 09:45:08,709 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2018-02-02 09:45:08,723 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-9403f23d-8c8e-4f9c-af96-de09e65ccf55
+2018-02-02 09:45:08,761 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2018-02-02 09:45:08,821 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2018-02-02 09:45:08,941 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @3877ms
+2018-02-02 09:45:09,042 INFO[org.spark_project.jetty.server.Server:345] - jetty-9.3.z-SNAPSHOT
+2018-02-02 09:45:09,067 INFO[org.spark_project.jetty.server.Server:403] - Started @4004ms
+2018-02-02 09:45:09,092 INFO[org.spark_project.jetty.server.AbstractConnector:270] - Started ServerConnector@44828f6b{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-02 09:45:09,092 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'SparkUI' on port 4040.
+2018-02-02 09:45:09,127 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@61bcd567{/jobs,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,128 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2e54db99{/jobs/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,129 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@4f2613d1{/jobs/job,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,130 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@773f7880{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,131 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@426b6a74{/stages,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,132 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@83298d7{/stages/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,133 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5b080f3a{/stages/stage,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,134 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@7d3430a7{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,135 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2756c0a7{/stages/pool,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,136 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@69637b10{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,136 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@165b2f7f{/storage,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,137 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@277f7dd3{/storage/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,137 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2364305a{/storage/rdd,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,138 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1bc715b8{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,139 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2b491fee{/environment,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,139 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1c55f277{/environment/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,140 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@3e8f7922{/executors,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,141 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@50eca7c6{/executors/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,142 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1de5f0ef{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,143 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@28d6290{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,152 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5ef0d29e{/static,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,153 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@71ae31b0{/,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,155 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@6f0ca692{/api,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,155 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5860f3d7{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,156 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@42f3156d{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,159 INFO[org.apache.spark.ui.SparkUI:54] - Bound SparkUI to 0.0.0.0, and started at http://192.168.11.26:4040
+2018-02-02 09:45:09,299 INFO[org.apache.spark.executor.Executor:54] - Starting executor ID driver on host localhost
+2018-02-02 09:45:09,343 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 65271.
+2018-02-02 09:45:09,349 INFO[org.apache.spark.network.netty.NettyBlockTransferService:54] - Server created on 192.168.11.26:65271
+2018-02-02 09:45:09,365 INFO[org.apache.spark.storage.BlockManager:54] - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-02-02 09:45:09,369 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registering BlockManager BlockManagerId(driver, 192.168.11.26, 65271, None)
+2018-02-02 09:45:09,376 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Registering block manager 192.168.11.26:65271 with 631.8 MB RAM, BlockManagerId(driver, 192.168.11.26, 65271, None)
+2018-02-02 09:45:09,384 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registered BlockManager BlockManagerId(driver, 192.168.11.26, 65271, None)
+2018-02-02 09:45:09,385 INFO[org.apache.spark.storage.BlockManager:54] - Initialized BlockManager: BlockManagerId(driver, 192.168.11.26, 65271, None)
+2018-02-02 09:45:09,828 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@11963225{/metrics/json,null,AVAILABLE,@Spark}
+2018-02-02 09:45:09,882 INFO[org.apache.spark.SparkContext:54] - Added JAR hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar at hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar with timestamp 1517535909882
+2018-02-02 09:45:10,306 INFO[org.apache.spark.SparkContext:54] - Starting job: count at SparkRDDOperation.java:30
+2018-02-02 09:45:10,330 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 0 (count at SparkRDDOperation.java:30) with 2 output partitions
+2018-02-02 09:45:10,331 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 0 (count at SparkRDDOperation.java:30)
+2018-02-02 09:45:10,331 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-02 09:45:10,337 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-02 09:45:10,348 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28), which has no missing parents
+2018-02-02 09:45:10,518 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0 stored as values in memory (estimated size 1448.0 B, free 631.8 MB)
+2018-02-02 09:45:10,586 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1006.0 B, free 631.8 MB)
+2018-02-02 09:45:10,592 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_0_piece0 in memory on 192.168.11.26:65271 (size: 1006.0 B, free: 631.8 MB)
+2018-02-02 09:45:10,598 INFO[org.apache.spark.SparkContext:54] - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+2018-02-02 09:45:10,625 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-02 09:45:10,627 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 0.0 with 2 tasks
+2018-02-02 09:45:10,690 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4843 bytes)
+2018-02-02 09:45:10,693 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 4840 bytes)
+2018-02-02 09:45:10,701 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 0.0 (TID 1)
+2018-02-02 09:45:10,701 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 0.0 (TID 0)
+2018-02-02 09:45:10,708 INFO[org.apache.spark.executor.Executor:54] - Fetching hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar with timestamp 1517535909882
+2018-02-02 09:45:18,708 INFO[org.apache.spark.util.Utils:54] - Fetching hdfs://192.168.11.25:9000/mumu/spark/jar/mumu-spark.jar to C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db\userFiles-1e375c13-78ac-4fb1-84e2-22be57b8a17a\fetchFileTemp826265042385159909.tmp
+2018-02-02 09:45:19,483 INFO[org.apache.spark.executor.Executor:54] - Adding file:/C:/Users/Administrator/AppData/Local/Temp/spark-9475b811-93ea-40eb-a36c-3d6fa0e413db/userFiles-1e375c13-78ac-4fb1-84e2-22be57b8a17a/mumu-spark.jar to class loader
+2018-02-02 09:45:19,537 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block rdd_0_0 stored as values in memory (estimated size 128.0 B, free 631.8 MB)
+2018-02-02 09:45:19,538 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added rdd_0_0 in memory on 192.168.11.26:65271 (size: 128.0 B, free: 631.8 MB)
+2018-02-02 09:45:19,538 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block rdd_0_1 stored as values in memory (estimated size 120.0 B, free 631.8 MB)
+2018-02-02 09:45:19,539 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added rdd_0_1 in memory on 192.168.11.26:65271 (size: 120.0 B, free: 631.8 MB)
+2018-02-02 09:45:19,561 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 0.0 (TID 0). 1529 bytes result sent to driver
+2018-02-02 09:45:19,561 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 0.0 (TID 1). 1529 bytes result sent to driver
+2018-02-02 09:45:19,569 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 0.0 (TID 1) in 8875 ms on localhost (executor driver) (1/2)
+2018-02-02 09:45:19,570 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 0.0 (TID 0) in 8907 ms on localhost (executor driver) (2/2)
+2018-02-02 09:45:19,571 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2018-02-02 09:45:19,575 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 0 (count at SparkRDDOperation.java:30) finished in 8.928 s
+2018-02-02 09:45:19,580 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 0 finished: count at SparkRDDOperation.java:30, took 9.273663 s
+2018-02-02 09:45:19,604 INFO[org.apache.spark.SparkContext:54] - Starting job: collect at SparkRDDOperation.java:31
+2018-02-02 09:45:19,605 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 1 (collect at SparkRDDOperation.java:31) with 2 output partitions
+2018-02-02 09:45:19,605 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 1 (collect at SparkRDDOperation.java:31)
+2018-02-02 09:45:19,605 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-02 09:45:19,607 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-02 09:45:19,608 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 1 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28), which has no missing parents
+2018-02-02 09:45:19,610 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1 stored as values in memory (estimated size 1616.0 B, free 631.8 MB)
+2018-02-02 09:45:19,614 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1_piece0 stored as bytes in memory (estimated size 1050.0 B, free 631.8 MB)
+2018-02-02 09:45:19,615 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_1_piece0 in memory on 192.168.11.26:65271 (size: 1050.0 B, free: 631.8 MB)
+2018-02-02 09:45:19,615 INFO[org.apache.spark.SparkContext:54] - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+2018-02-02 09:45:19,617 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 1 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-02 09:45:19,617 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 1.0 with 2 tasks
+2018-02-02 09:45:19,622 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 1.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 4843 bytes)
+2018-02-02 09:45:19,623 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 1.0 (TID 3, localhost, executor driver, partition 1, PROCESS_LOCAL, 4840 bytes)
+2018-02-02 09:45:19,623 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 1.0 (TID 2)
+2018-02-02 09:45:19,623 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 1.0 (TID 3)
+2018-02-02 09:45:19,629 INFO[org.apache.spark.storage.BlockManager:54] - Found block rdd_0_1 locally
+2018-02-02 09:45:19,629 INFO[org.apache.spark.storage.BlockManager:54] - Found block rdd_0_0 locally
+2018-02-02 09:45:19,631 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 1.0 (TID 2). 767 bytes result sent to driver
+2018-02-02 09:45:19,631 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 1.0 (TID 3). 764 bytes result sent to driver
+2018-02-02 09:45:19,632 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 1.0 (TID 2) in 11 ms on localhost (executor driver) (1/2)
+2018-02-02 09:45:19,633 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 1.0 (TID 3) in 11 ms on localhost (executor driver) (2/2)
+2018-02-02 09:45:19,633 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2018-02-02 09:45:19,633 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 1 (collect at SparkRDDOperation.java:31) finished in 0.013 s
+2018-02-02 09:45:19,634 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 1 finished: collect at SparkRDDOperation.java:31, took 0.029757 s
+2018-02-02 09:45:19,644 INFO[org.spark_project.jetty.server.AbstractConnector:310] - Stopped Spark@44828f6b{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-02 09:45:19,645 INFO[org.apache.spark.ui.SparkUI:54] - Stopped Spark web UI at http://192.168.11.26:4040
+2018-02-02 09:45:19,656 INFO[org.apache.spark.MapOutputTrackerMasterEndpoint:54] - MapOutputTrackerMasterEndpoint stopped!
+2018-02-02 09:45:19,669 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore cleared
+2018-02-02 09:45:19,669 INFO[org.apache.spark.storage.BlockManager:54] - BlockManager stopped
+2018-02-02 09:45:19,673 INFO[org.apache.spark.storage.BlockManagerMaster:54] - BlockManagerMaster stopped
+2018-02-02 09:45:19,675 INFO[org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54] - OutputCommitCoordinator stopped!
+2018-02-02 09:45:19,680 WARN[org.apache.spark.SparkEnv:87] - Exception while deleting Spark temp dir: C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db\userFiles-1e375c13-78ac-4fb1-84e2-22be57b8a17a
+java.io.IOException: Failed to delete: C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db\userFiles-1e375c13-78ac-4fb1-84e2-22be57b8a17a
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1031)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:103)
+	at org.apache.spark.SparkContext$$anonfun$stop$11.apply$mcV$sp(SparkContext.scala:1937)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1317)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1936)
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:654)
+	at org.apache.spark.api.java.JavaSparkContext.close(JavaSparkContext.scala:657)
+	at com.lovecws.mumu.spark.rdd.SparkRDDOperation.count(SparkRDDOperation.java:32)
+	at com.lovecws.mumu.spark.rdd.SparkRDDOperationTest.count(SparkRDDOperationTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2018-02-02 09:45:19,683 INFO[org.apache.spark.SparkContext:54] - Successfully stopped SparkContext
+2018-02-02 09:45:19,686 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2018-02-02 09:45:19,688 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db\userFiles-1e375c13-78ac-4fb1-84e2-22be57b8a17a
+2018-02-02 09:45:19,693 ERROR[org.apache.spark.util.ShutdownHookManager:91] - Exception while deleting Spark temp dir: C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db\userFiles-1e375c13-78ac-4fb1-84e2-22be57b8a17a
+java.io.IOException: Failed to delete: C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db\userFiles-1e375c13-78ac-4fb1-84e2-22be57b8a17a
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1031)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1.apply$mcV$sp(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1954)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-02 09:45:19,724 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db
+2018-02-02 09:45:19,729 ERROR[org.apache.spark.util.ShutdownHookManager:91] - Exception while deleting Spark temp dir: C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db
+java.io.IOException: Failed to delete: C:\Users\Administrator\AppData\Local\Temp\spark-9475b811-93ea-40eb-a36c-3d6fa0e413db
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1031)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1.apply$mcV$sp(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1954)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-02 09:46:32,867 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2018-02-02 09:46:33,646 INFO[org.apache.spark.SparkContext:54] - Submitted application: mumuSpark
+2018-02-02 09:46:33,676 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2018-02-02 09:46:33,677 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2018-02-02 09:46:33,678 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2018-02-02 09:46:33,679 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2018-02-02 09:46:33,680 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2018-02-02 09:46:34,165 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 65374.
+2018-02-02 09:46:34,184 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2018-02-02 09:46:34,238 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2018-02-02 09:46:34,241 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-02-02 09:46:34,242 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2018-02-02 09:46:34,251 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-e601b9e8-f700-4a10-9d58-ff4cd954963d
+2018-02-02 09:46:34,274 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2018-02-02 09:46:34,327 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2018-02-02 09:46:34,412 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @2595ms
+2018-02-02 09:46:34,480 INFO[org.spark_project.jetty.server.Server:345] - jetty-9.3.z-SNAPSHOT
+2018-02-02 09:46:34,496 INFO[org.spark_project.jetty.server.Server:403] - Started @2681ms
+2018-02-02 09:46:34,520 INFO[org.spark_project.jetty.server.AbstractConnector:270] - Started ServerConnector@44828f6b{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-02 09:46:34,520 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'SparkUI' on port 4040.
+2018-02-02 09:46:34,544 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@61bcd567{/jobs,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,544 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2e54db99{/jobs/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,545 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@4f2613d1{/jobs/job,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,546 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@773f7880{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,546 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@426b6a74{/stages,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,547 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@83298d7{/stages/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,547 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5b080f3a{/stages/stage,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,551 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@7d3430a7{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,551 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2756c0a7{/stages/pool,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,552 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@69637b10{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,553 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@165b2f7f{/storage,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,554 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@277f7dd3{/storage/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,556 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2364305a{/storage/rdd,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,557 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1bc715b8{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,566 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2b491fee{/environment,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,568 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1c55f277{/environment/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,569 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@3e8f7922{/executors,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,569 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@50eca7c6{/executors/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,570 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1de5f0ef{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,571 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@28d6290{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,579 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5ef0d29e{/static,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,580 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@71ae31b0{/,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,580 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@6f0ca692{/api,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,581 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5860f3d7{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,582 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@42f3156d{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-02-02 09:46:34,584 INFO[org.apache.spark.ui.SparkUI:54] - Bound SparkUI to 0.0.0.0, and started at http://192.168.11.26:4040
+2018-02-02 09:46:34,678 INFO[org.apache.spark.executor.Executor:54] - Starting executor ID driver on host localhost
+2018-02-02 09:46:34,710 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 65387.
+2018-02-02 09:46:34,712 INFO[org.apache.spark.network.netty.NettyBlockTransferService:54] - Server created on 192.168.11.26:65387
+2018-02-02 09:46:34,719 INFO[org.apache.spark.storage.BlockManager:54] - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-02-02 09:46:34,721 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registering BlockManager BlockManagerId(driver, 192.168.11.26, 65387, None)
+2018-02-02 09:46:34,745 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Registering block manager 192.168.11.26:65387 with 631.8 MB RAM, BlockManagerId(driver, 192.168.11.26, 65387, None)
+2018-02-02 09:46:34,748 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registered BlockManager BlockManagerId(driver, 192.168.11.26, 65387, None)
+2018-02-02 09:46:34,750 INFO[org.apache.spark.storage.BlockManager:54] - Initialized BlockManager: BlockManagerId(driver, 192.168.11.26, 65387, None)
+2018-02-02 09:46:35,054 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@11963225{/metrics/json,null,AVAILABLE,@Spark}
+2018-02-02 09:46:35,441 INFO[org.apache.spark.SparkContext:54] - Starting job: count at SparkRDDOperation.java:30
+2018-02-02 09:46:35,466 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 0 (count at SparkRDDOperation.java:30) with 2 output partitions
+2018-02-02 09:46:35,467 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 0 (count at SparkRDDOperation.java:30)
+2018-02-02 09:46:35,467 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-02 09:46:35,472 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-02 09:46:35,484 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28), which has no missing parents
+2018-02-02 09:46:35,634 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0 stored as values in memory (estimated size 1448.0 B, free 631.8 MB)
+2018-02-02 09:46:35,696 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1006.0 B, free 631.8 MB)
+2018-02-02 09:46:35,699 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_0_piece0 in memory on 192.168.11.26:65387 (size: 1006.0 B, free: 631.8 MB)
+2018-02-02 09:46:35,703 INFO[org.apache.spark.SparkContext:54] - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+2018-02-02 09:46:35,739 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-02 09:46:35,740 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 0.0 with 2 tasks
+2018-02-02 09:46:35,788 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4843 bytes)
+2018-02-02 09:46:35,790 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 4840 bytes)
+2018-02-02 09:46:35,794 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 0.0 (TID 0)
+2018-02-02 09:46:35,794 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 0.0 (TID 1)
+2018-02-02 09:46:35,828 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block rdd_0_1 stored as values in memory (estimated size 120.0 B, free 631.8 MB)
+2018-02-02 09:46:35,832 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added rdd_0_1 in memory on 192.168.11.26:65387 (size: 120.0 B, free: 631.8 MB)
+2018-02-02 09:46:35,834 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block rdd_0_0 stored as values in memory (estimated size 128.0 B, free 631.8 MB)
+2018-02-02 09:46:35,834 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added rdd_0_0 in memory on 192.168.11.26:65387 (size: 128.0 B, free: 631.8 MB)
+2018-02-02 09:46:35,853 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 0.0 (TID 1). 1486 bytes result sent to driver
+2018-02-02 09:46:35,853 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 0.0 (TID 0). 1443 bytes result sent to driver
+2018-02-02 09:46:35,861 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 0.0 (TID 1) in 71 ms on localhost (executor driver) (1/2)
+2018-02-02 09:46:35,862 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 0.0 (TID 0) in 93 ms on localhost (executor driver) (2/2)
+2018-02-02 09:46:35,921 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2018-02-02 09:46:35,928 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 0 (count at SparkRDDOperation.java:30) finished in 0.171 s
+2018-02-02 09:46:35,934 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 0 finished: count at SparkRDDOperation.java:30, took 0.492284 s
+2018-02-02 09:46:35,952 INFO[org.apache.spark.SparkContext:54] - Starting job: collect at SparkRDDOperation.java:31
+2018-02-02 09:46:35,954 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 1 (collect at SparkRDDOperation.java:31) with 2 output partitions
+2018-02-02 09:46:35,954 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 1 (collect at SparkRDDOperation.java:31)
+2018-02-02 09:46:35,955 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-02 09:46:35,957 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-02 09:46:35,957 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 1 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28), which has no missing parents
+2018-02-02 09:46:35,959 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1 stored as values in memory (estimated size 1616.0 B, free 631.8 MB)
+2018-02-02 09:46:35,962 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1_piece0 stored as bytes in memory (estimated size 1050.0 B, free 631.8 MB)
+2018-02-02 09:46:35,963 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_1_piece0 in memory on 192.168.11.26:65387 (size: 1050.0 B, free: 631.8 MB)
+2018-02-02 09:46:35,964 INFO[org.apache.spark.SparkContext:54] - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+2018-02-02 09:46:35,966 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 1 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-02 09:46:35,967 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 1.0 with 2 tasks
+2018-02-02 09:46:35,972 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 1.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 4843 bytes)
+2018-02-02 09:46:35,973 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 1.0 (TID 3, localhost, executor driver, partition 1, PROCESS_LOCAL, 4840 bytes)
+2018-02-02 09:46:35,973 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 1.0 (TID 2)
+2018-02-02 09:46:35,973 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 1.0 (TID 3)
+2018-02-02 09:46:35,977 INFO[org.apache.spark.storage.BlockManager:54] - Found block rdd_0_0 locally
+2018-02-02 09:46:35,979 INFO[org.apache.spark.storage.BlockManager:54] - Found block rdd_0_1 locally
+2018-02-02 09:46:35,979 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 1.0 (TID 2). 724 bytes result sent to driver
+2018-02-02 09:46:35,980 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 1.0 (TID 3). 721 bytes result sent to driver
+2018-02-02 09:46:35,983 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 1.0 (TID 2) in 13 ms on localhost (executor driver) (1/2)
+2018-02-02 09:46:35,983 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 1.0 (TID 3) in 11 ms on localhost (executor driver) (2/2)
+2018-02-02 09:46:35,983 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2018-02-02 09:46:35,984 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 1 (collect at SparkRDDOperation.java:31) finished in 0.014 s
+2018-02-02 09:46:35,985 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 1 finished: collect at SparkRDDOperation.java:31, took 0.032768 s
+2018-02-02 09:46:35,995 INFO[org.spark_project.jetty.server.AbstractConnector:310] - Stopped Spark@44828f6b{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-02 09:46:35,996 INFO[org.apache.spark.ui.SparkUI:54] - Stopped Spark web UI at http://192.168.11.26:4040
+2018-02-02 09:46:36,007 INFO[org.apache.spark.MapOutputTrackerMasterEndpoint:54] - MapOutputTrackerMasterEndpoint stopped!
+2018-02-02 09:46:36,021 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore cleared
+2018-02-02 09:46:36,022 INFO[org.apache.spark.storage.BlockManager:54] - BlockManager stopped
+2018-02-02 09:46:36,025 INFO[org.apache.spark.storage.BlockManagerMaster:54] - BlockManagerMaster stopped
+2018-02-02 09:46:36,028 INFO[org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54] - OutputCommitCoordinator stopped!
+2018-02-02 09:46:36,032 INFO[org.apache.spark.SparkContext:54] - Successfully stopped SparkContext
+2018-02-02 09:46:36,035 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2018-02-02 09:46:36,036 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-ed5a5b45-e096-475e-9f39-1243a87e7221
+2018-02-02 09:57:11,841 INFO[org.apache.spark.SparkContext:54] - Running Spark version 2.2.0
+2018-02-02 09:57:12,686 INFO[org.apache.spark.SparkContext:54] - Submitted application: mumuSpark
+2018-02-02 09:57:12,734 INFO[org.apache.spark.SecurityManager:54] - Changing view acls to: Administrator
+2018-02-02 09:57:12,735 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls to: Administrator
+2018-02-02 09:57:12,736 INFO[org.apache.spark.SecurityManager:54] - Changing view acls groups to: 
+2018-02-02 09:57:12,737 INFO[org.apache.spark.SecurityManager:54] - Changing modify acls groups to: 
+2018-02-02 09:57:12,738 INFO[org.apache.spark.SecurityManager:54] - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+2018-02-02 09:57:13,317 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'sparkDriver' on port 49719.
+2018-02-02 09:57:13,343 INFO[org.apache.spark.SparkEnv:54] - Registering MapOutputTracker
+2018-02-02 09:57:13,401 INFO[org.apache.spark.SparkEnv:54] - Registering BlockManagerMaster
+2018-02-02 09:57:13,405 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2018-02-02 09:57:13,405 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - BlockManagerMasterEndpoint up
+2018-02-02 09:57:13,422 INFO[org.apache.spark.storage.DiskBlockManager:54] - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-5d221632-2abf-4c77-8b98-6d34949371a2
+2018-02-02 09:57:13,455 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore started with capacity 631.8 MB
+2018-02-02 09:57:13,507 INFO[org.apache.spark.SparkEnv:54] - Registering OutputCommitCoordinator
+2018-02-02 09:57:13,617 INFO[org.spark_project.jetty.util.log:192] - Logging initialized @3049ms
+2018-02-02 09:57:13,712 INFO[org.spark_project.jetty.server.Server:345] - jetty-9.3.z-SNAPSHOT
+2018-02-02 09:57:13,728 INFO[org.spark_project.jetty.server.Server:403] - Started @3161ms
+2018-02-02 09:57:13,754 INFO[org.spark_project.jetty.server.AbstractConnector:270] - Started ServerConnector@1f547869{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-02 09:57:13,755 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'SparkUI' on port 4040.
+2018-02-02 09:57:13,788 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@61bcd567{/jobs,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,789 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2e54db99{/jobs/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,790 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@4f2613d1{/jobs/job,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,791 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@773f7880{/jobs/job/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,792 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@426b6a74{/stages,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,792 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@83298d7{/stages/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,793 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5b080f3a{/stages/stage,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,794 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@7d3430a7{/stages/stage/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,795 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2756c0a7{/stages/pool,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,797 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@69637b10{/stages/pool/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,797 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@165b2f7f{/storage,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,800 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@277f7dd3{/storage/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,801 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2364305a{/storage/rdd,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,802 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1bc715b8{/storage/rdd/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,803 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@2b491fee{/environment,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,803 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1c55f277{/environment/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,804 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@3e8f7922{/executors,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,805 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@50eca7c6{/executors/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,805 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@1de5f0ef{/executors/threadDump,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,806 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@28d6290{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,816 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5ef0d29e{/static,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,817 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@71ae31b0{/,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,818 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@6f0ca692{/api,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,819 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@5860f3d7{/jobs/job/kill,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,820 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@42f3156d{/stages/stage/kill,null,AVAILABLE,@Spark}
+2018-02-02 09:57:13,822 INFO[org.apache.spark.ui.SparkUI:54] - Bound SparkUI to 0.0.0.0, and started at http://192.168.11.26:4040
+2018-02-02 09:57:13,951 INFO[org.apache.spark.executor.Executor:54] - Starting executor ID driver on host localhost
+2018-02-02 09:57:13,987 INFO[org.apache.spark.util.Utils:54] - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 49732.
+2018-02-02 09:57:13,988 INFO[org.apache.spark.network.netty.NettyBlockTransferService:54] - Server created on 192.168.11.26:49732
+2018-02-02 09:57:13,990 INFO[org.apache.spark.storage.BlockManager:54] - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2018-02-02 09:57:13,992 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registering BlockManager BlockManagerId(driver, 192.168.11.26, 49732, None)
+2018-02-02 09:57:13,995 INFO[org.apache.spark.storage.BlockManagerMasterEndpoint:54] - Registering block manager 192.168.11.26:49732 with 631.8 MB RAM, BlockManagerId(driver, 192.168.11.26, 49732, None)
+2018-02-02 09:57:13,999 INFO[org.apache.spark.storage.BlockManagerMaster:54] - Registered BlockManager BlockManagerId(driver, 192.168.11.26, 49732, None)
+2018-02-02 09:57:13,999 INFO[org.apache.spark.storage.BlockManager:54] - Initialized BlockManager: BlockManagerId(driver, 192.168.11.26, 49732, None)
+2018-02-02 09:57:14,261 INFO[org.spark_project.jetty.server.handler.ContextHandler:781] - Started o.s.j.s.ServletContextHandler@11963225{/metrics/json,null,AVAILABLE,@Spark}
+2018-02-02 09:57:14,805 INFO[org.apache.spark.SparkContext:54] - Starting job: count at SparkRDDOperation.java:31
+2018-02-02 09:57:14,835 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 0 (count at SparkRDDOperation.java:31) with 2 output partitions
+2018-02-02 09:57:14,836 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 0 (count at SparkRDDOperation.java:31)
+2018-02-02 09:57:14,837 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-02 09:57:14,843 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-02 09:57:14,856 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28), which has no missing parents
+2018-02-02 09:57:15,053 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0 stored as values in memory (estimated size 1448.0 B, free 631.8 MB)
+2018-02-02 09:57:15,106 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1006.0 B, free 631.8 MB)
+2018-02-02 09:57:15,109 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_0_piece0 in memory on 192.168.11.26:49732 (size: 1006.0 B, free: 631.8 MB)
+2018-02-02 09:57:15,116 INFO[org.apache.spark.SparkContext:54] - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+2018-02-02 09:57:15,140 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-02 09:57:15,141 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 0.0 with 2 tasks
+2018-02-02 09:57:15,202 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4843 bytes)
+2018-02-02 09:57:15,206 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 4840 bytes)
+2018-02-02 09:57:15,215 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 0.0 (TID 0)
+2018-02-02 09:57:15,215 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 0.0 (TID 1)
+2018-02-02 09:57:15,258 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block rdd_0_1 stored as values in memory (estimated size 120.0 B, free 631.8 MB)
+2018-02-02 09:57:15,260 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block rdd_0_0 stored as values in memory (estimated size 128.0 B, free 631.8 MB)
+2018-02-02 09:57:15,260 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added rdd_0_1 in memory on 192.168.11.26:49732 (size: 120.0 B, free: 631.8 MB)
+2018-02-02 09:57:15,264 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added rdd_0_0 in memory on 192.168.11.26:49732 (size: 128.0 B, free: 631.8 MB)
+2018-02-02 09:57:15,303 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 0.0 (TID 0). 1443 bytes result sent to driver
+2018-02-02 09:57:15,303 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 0.0 (TID 1). 1443 bytes result sent to driver
+2018-02-02 09:57:15,315 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 0.0 (TID 0) in 138 ms on localhost (executor driver) (1/2)
+2018-02-02 09:57:15,317 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 0.0 (TID 1) in 111 ms on localhost (executor driver) (2/2)
+2018-02-02 09:57:15,318 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2018-02-02 09:57:15,398 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 0 (count at SparkRDDOperation.java:31) finished in 0.234 s
+2018-02-02 09:57:15,415 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 0 finished: count at SparkRDDOperation.java:31, took 0.609500 s
+2018-02-02 09:57:15,444 INFO[org.apache.spark.SparkContext:54] - Starting job: collect at SparkRDDOperation.java:32
+2018-02-02 09:57:15,446 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Got job 1 (collect at SparkRDDOperation.java:32) with 2 output partitions
+2018-02-02 09:57:15,446 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Final stage: ResultStage 1 (collect at SparkRDDOperation.java:32)
+2018-02-02 09:57:15,446 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Parents of final stage: List()
+2018-02-02 09:57:15,449 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Missing parents: List()
+2018-02-02 09:57:15,450 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting ResultStage 1 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28), which has no missing parents
+2018-02-02 09:57:15,452 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1 stored as values in memory (estimated size 1616.0 B, free 631.8 MB)
+2018-02-02 09:57:15,455 INFO[org.apache.spark.storage.memory.MemoryStore:54] - Block broadcast_1_piece0 stored as bytes in memory (estimated size 1050.0 B, free 631.8 MB)
+2018-02-02 09:57:15,456 INFO[org.apache.spark.storage.BlockManagerInfo:54] - Added broadcast_1_piece0 in memory on 192.168.11.26:49732 (size: 1050.0 B, free: 631.8 MB)
+2018-02-02 09:57:15,457 INFO[org.apache.spark.SparkContext:54] - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+2018-02-02 09:57:15,458 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Submitting 2 missing tasks from ResultStage 1 (ParallelCollectionRDD[0] at parallelize at SparkRDDOperation.java:28) (first 15 tasks are for partitions Vector(0, 1))
+2018-02-02 09:57:15,459 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Adding task set 1.0 with 2 tasks
+2018-02-02 09:57:15,466 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 0.0 in stage 1.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 4843 bytes)
+2018-02-02 09:57:15,467 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Starting task 1.0 in stage 1.0 (TID 3, localhost, executor driver, partition 1, PROCESS_LOCAL, 4840 bytes)
+2018-02-02 09:57:15,469 INFO[org.apache.spark.executor.Executor:54] - Running task 0.0 in stage 1.0 (TID 2)
+2018-02-02 09:57:15,471 INFO[org.apache.spark.executor.Executor:54] - Running task 1.0 in stage 1.0 (TID 3)
+2018-02-02 09:57:15,483 INFO[org.apache.spark.storage.BlockManager:54] - Found block rdd_0_0 locally
+2018-02-02 09:57:15,484 INFO[org.apache.spark.storage.BlockManager:54] - Found block rdd_0_1 locally
+2018-02-02 09:57:15,485 INFO[org.apache.spark.executor.Executor:54] - Finished task 1.0 in stage 1.0 (TID 3). 721 bytes result sent to driver
+2018-02-02 09:57:15,486 INFO[org.apache.spark.executor.Executor:54] - Finished task 0.0 in stage 1.0 (TID 2). 767 bytes result sent to driver
+2018-02-02 09:57:15,495 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 0.0 in stage 1.0 (TID 2) in 32 ms on localhost (executor driver) (1/2)
+2018-02-02 09:57:15,496 INFO[org.apache.spark.scheduler.TaskSetManager:54] - Finished task 1.0 in stage 1.0 (TID 3) in 29 ms on localhost (executor driver) (2/2)
+2018-02-02 09:57:15,496 INFO[org.apache.spark.scheduler.TaskSchedulerImpl:54] - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2018-02-02 09:57:15,497 INFO[org.apache.spark.scheduler.DAGScheduler:54] - ResultStage 1 (collect at SparkRDDOperation.java:32) finished in 0.034 s
+2018-02-02 09:57:15,498 INFO[org.apache.spark.scheduler.DAGScheduler:54] - Job 1 finished: collect at SparkRDDOperation.java:32, took 0.053402 s
+2018-02-02 09:57:15,511 INFO[org.spark_project.jetty.server.AbstractConnector:310] - Stopped Spark@1f547869{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2018-02-02 09:57:15,517 INFO[org.apache.spark.ui.SparkUI:54] - Stopped Spark web UI at http://192.168.11.26:4040
+2018-02-02 09:57:15,531 INFO[org.apache.spark.MapOutputTrackerMasterEndpoint:54] - MapOutputTrackerMasterEndpoint stopped!
+2018-02-02 09:57:15,548 INFO[org.apache.spark.storage.memory.MemoryStore:54] - MemoryStore cleared
+2018-02-02 09:57:15,549 INFO[org.apache.spark.storage.BlockManager:54] - BlockManager stopped
+2018-02-02 09:57:15,554 INFO[org.apache.spark.storage.BlockManagerMaster:54] - BlockManagerMaster stopped
+2018-02-02 09:57:15,556 INFO[org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54] - OutputCommitCoordinator stopped!
+2018-02-02 09:57:15,559 INFO[org.apache.spark.SparkContext:54] - Successfully stopped SparkContext
+2018-02-02 09:57:15,565 INFO[org.apache.spark.util.ShutdownHookManager:54] - Shutdown hook called
+2018-02-02 09:57:15,566 INFO[org.apache.spark.util.ShutdownHookManager:54] - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-0a6defd4-6620-4809-85e2-38d79bc90268
