@@ -1,11 +1,9 @@
 package com.lovecws.mumu.spark.streaming;
 
 import com.lovecws.mumu.spark.MumuSparkConfiguration;
+import com.lovecws.mumu.spark.streaming.receiver.SocketReceiver;
 import org.apache.spark.api.java.Optional;
-import org.apache.spark.api.java.function.FlatMapFunction;
-import org.apache.spark.api.java.function.Function0;
-import org.apache.spark.api.java.function.Function2;
-import org.apache.spark.api.java.function.PairFunction;
+import org.apache.spark.api.java.function.*;
 import org.apache.spark.streaming.api.java.JavaDStream;
 import org.apache.spark.streaming.api.java.JavaPairDStream;
 import org.apache.spark.streaming.api.java.JavaReceiverInputDStream;
@@ -13,6 +11,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import scala.Serializable;
 import scala.Tuple2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -93,5 +92,44 @@ public class SocketSparkStreaming implements Serializable {
             }
         });
         return streamingContext;
+    }
+
+    /**
+     * 使用自定义的receiver来接收信息
+     *
+     * @param checkpointDirectory
+     * @param batchDuration
+     * @param socketAddress
+     * @param socketPort
+     */
+    public void socketReceiver(String checkpointDirectory, long batchDuration, String socketAddress, int socketPort) {
+        JavaStreamingContext streamingContext = new MumuSparkConfiguration().javaStreamingContext(batchDuration);
+        streamingContext.checkpoint(checkpointDirectory);
+        JavaReceiverInputDStream<String> receiverInputDStream = streamingContext.receiverStream(new SocketReceiver(socketAddress, socketPort));
+
+        JavaPairDStream<String, Integer> dStream = receiverInputDStream.flatMapToPair(new PairFlatMapFunction<String, String, Integer>() {
+            @Override
+            public Iterator<Tuple2<String, Integer>> call(final String line) throws Exception {
+                List<Tuple2<String, Integer>> tuple2s = new ArrayList<Tuple2<String, Integer>>();
+                for (String word : line.split(" ")) {
+                    tuple2s.add(new Tuple2<>(word, 1));
+                }
+                return tuple2s.iterator();
+            }
+        });
+        JavaPairDStream<String, Integer> wordCount = dStream.reduceByKey(new Function2<Integer, Integer, Integer>() {
+            @Override
+            public Integer call(final Integer integer, final Integer integer2) throws Exception {
+                return integer + integer2;
+            }
+        });
+        wordCount.print();
+
+        streamingContext.start();
+        try {
+            streamingContext.awaitTermination();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

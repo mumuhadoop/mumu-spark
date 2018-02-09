@@ -1,8 +1,11 @@
 package com.lovecws.mumu.spark.rdd;
 
 import com.lovecws.mumu.spark.MumuSparkConfiguration;
+import com.lovecws.mumu.spark.rdd.accumulator.MyVector;
+import com.lovecws.mumu.spark.rdd.accumulator.MyVectorAccumulator;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.spark.Accumulator;
+import org.apache.spark.AccumulatorParam;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
@@ -94,6 +97,25 @@ public class SparkRDDOperation {
         accumulator.add(100);
         System.out.println(accumulator.value());
         sparkContext.close();
+
+        sparkContext.sc().register(new MyVectorAccumulator(), "vectorAccumulator");
+        Accumulator<MyVector> vectorAccumulator = sparkContext.accumulator(new MyVector(), new AccumulatorParam<MyVector>() {
+            @Override
+            public MyVector addAccumulator(final MyVector vector, final MyVector t1) {
+                return null;
+            }
+
+            @Override
+            public MyVector addInPlace(final MyVector vector, final MyVector r1) {
+                return null;
+            }
+
+            @Override
+            public MyVector zero(final MyVector vector) {
+                return null;
+            }
+        });
+        System.out.println(vectorAccumulator);
     }
 
     public void saveAsObjectFile(List<Object> list) {

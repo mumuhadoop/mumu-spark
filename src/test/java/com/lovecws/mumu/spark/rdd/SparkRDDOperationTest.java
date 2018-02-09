@@ -60,7 +60,6 @@ public class SparkRDDOperationTest {
         sparkRDDOperation.accumulator();
     }
 
-
     @Test
     public void saveAsObjectFile() {
         List<Object> list = new ArrayList<Object>();

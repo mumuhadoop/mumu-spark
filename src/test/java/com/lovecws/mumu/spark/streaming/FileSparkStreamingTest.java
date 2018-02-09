@@ -17,7 +17,7 @@ public class FileSparkStreamingTest {
 
     @Test
     public void streaming() {
-        sparkStreaming.fileStreaming("D:\\data\\sparkstreaming\\file", 10l);
+        sparkStreaming.fileStreaming("E:\\mumu\\spark\\streaming\\file", 10l);
     }
 
     @Test
@@ -25,5 +25,8 @@ public class FileSparkStreamingTest {
         sparkStreaming.fileStreaming("hdfs://192.168.11.25:9000/mumu/spark/file", 10l);
     }
 
-
+    @Test
+    public void fileStreamingState() {
+        sparkStreaming.fileStreamingState("E:\\mumu\\spark\\streaming\\filecheckpoint", "E:\\mumu\\spark\\streaming\\file", 10l);
+    }
 }
