@@ -28,7 +28,9 @@ public class MumuSparkConfiguration {
 
     private static String SPARK_MASTER = "local[2]";
     //private static String SPARK_MASTER = "spark://192.168.11.25:7077";
+    //private static String SPARK_MASTER = "yarn";
     private static String HADOOP_URL = "hdfs://192.168.11.25:9000";
+    //private static String HADOOP_URL = "local";
 
     public synchronized JavaSparkContext javaSparkContext() {
         if (sparkContext == null) {
@@ -40,7 +42,10 @@ public class MumuSparkConfiguration {
             conf.set("spark.driver.allowMultipleContexts", "true");
             sparkContext = new JavaSparkContext(conf);
             if (!master.contains("local")) {
-                sparkContext.addJar(HADOOP_URL + "/mumu/spark/jar/mumu-spark.jar");
+                sparkContext.addJar(hadoopAddress() + "/mumu/spark/jar/mumu-spark.jar");
+            }
+            if (master.contains("yarn") && System.getenv("HADOOP_CONF_DIR") != null && System.getenv("YARN_CONF_DIR") != null) {
+                conf.set("HADOOP_CONF_DIR","D:\\hadoop");
             }
         }
         return sparkContext;
@@ -58,6 +63,7 @@ public class MumuSparkConfiguration {
                 .master(getMaster())
                 .appName("mumuSpark")
                 .config("spark.sql.warehouse.dir", userDir + File.separator + "spark-warehouse")
+                .config("spark.driver.allowMultipleContexts", true)
                 .getOrCreate();
         SQLContext sqlContext = new SQLContext(sparkSession);
         return sqlContext;
@@ -70,6 +76,7 @@ public class MumuSparkConfiguration {
                 .master(getMaster())
                 .appName("mumuSpark")
                 .config("spark.sql.warehouse.dir", userDir + File.separator + "hive-warehouse")
+                .config("spark.driver.allowMultipleContexts", true)
                 .enableHiveSupport()
                 .getOrCreate();
         SQLContext sqlContext = new SQLContext(sparkSession);
@@ -78,13 +85,17 @@ public class MumuSparkConfiguration {
 
     public String getMaster() {
         String spark_master = System.getenv("SPARK_MASTER");
-        if (spark_master != null) {
-            return spark_master;
+        if (spark_master != null && !"".equals(spark_master)) {
+            SPARK_MASTER = spark_master;
         }
         return SPARK_MASTER;
     }
 
     public String hadoopAddress() {
+        String hadoop_url = System.getenv("HADOOP_URL");
+        if (hadoop_url != null && !"".equals(HADOOP_URL)) {
+            HADOOP_URL = hadoop_url;
+        }
         return HADOOP_URL;
     }
 
@@ -95,13 +106,13 @@ public class MumuSparkConfiguration {
         Configuration configuration = new Configuration();
         DistributedFileSystem distributedFileSystem = new DistributedFileSystem();
         try {
-            distributedFileSystem.initialize(new URI(HADOOP_URL), configuration);
+            distributedFileSystem.initialize(new URI(hadoopAddress()), configuration);
             FileStatus[] fileStatuses = distributedFileSystem.listStatus(new Path("/"));
             for (FileStatus fileStatus : fileStatuses) {
                 System.out.println(fileStatus);
             }
             String userDir = System.getProperty("user.dir");
-            distributedFileSystem.copyFromLocalFile(true, true, new Path(userDir + "/target/mumu-spark.jar"), new Path(HADOOP_URL + "/mumu/spark/jar/"));
+            distributedFileSystem.copyFromLocalFile(true, true, new Path(userDir + "/target/mumu-spark.jar"), new Path(hadoopAddress() + "/mumu/spark/jar/"));
         } catch (IOException e) {
             e.printStackTrace();
         } catch (URISyntaxException e) {

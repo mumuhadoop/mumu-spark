@@ -10,6 +10,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import scala.Serializable;
 import scala.Tuple2;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -77,6 +78,10 @@ public class FileSparkStreaming implements Serializable {
      * @param batchDuration       监听间隔
      */
     public void fileStreamingState(String checkpointDirectory, String textFile, long batchDuration) {
+        File file = new File(checkpointDirectory);
+        if (file.exists()) {
+            file.deleteOnExit();
+        }
         JavaStreamingContext streamingContext = JavaStreamingContext.getOrCreate(checkpointDirectory, new Function0<JavaStreamingContext>() {
             @Override
             public JavaStreamingContext call() throws Exception {

@@ -11,6 +11,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import scala.Serializable;
 import scala.Tuple2;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -33,7 +34,7 @@ public class SocketSparkStreaming implements Serializable {
      * @param socketPort          socket端口
      */
     public void streaming(String checkpointDirectory, long batchDuration, String socketAddress, int socketPort) {
-        JavaStreamingContext streamingContext = checkpoint(checkpointDirectory,batchDuration);
+        JavaStreamingContext streamingContext = checkpoint(checkpointDirectory, batchDuration);
         JavaReceiverInputDStream<String> dStream = streamingContext.socketTextStream(socketAddress, socketPort);
 
         JavaDStream<String> mapStream = dStream.flatMap(new FlatMapFunction<String, String>() {
@@ -83,6 +84,10 @@ public class SocketSparkStreaming implements Serializable {
      * @return
      */
     public JavaStreamingContext checkpoint(String checkpointDirectory, long batchDuration) {
+        File file = new File(checkpointDirectory);
+        if (file.exists()) {
+            file.deleteOnExit();
+        }
         JavaStreamingContext streamingContext = JavaStreamingContext.getOrCreate(checkpointDirectory, new Function0<JavaStreamingContext>() {
             @Override
             public JavaStreamingContext call() throws Exception {
