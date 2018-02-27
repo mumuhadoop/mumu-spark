@@ -143,6 +143,10 @@
     <orderEntry type="library" name="Maven: org.twitter4j:twitter4j-stream:4.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.twitter4j:twitter4j-core:4.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.bahir:spark-streaming-zeromq_2.11:2.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-zeromq_2.11:2.3.16" level="project" />
+    <orderEntry type="library" name="Maven: org.spark-project.zeromq:zeromq-scala-binding_2.11:0.0.7-spark" level="project" />
+    <orderEntry type="library" name="Maven: net.java.dev.jna:jna:3.0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-constants:0.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.bahir:spark-streaming-akka_2.11:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.11:2.4.20" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe:config:1.3.0" level="project" />
@@ -156,12 +160,9 @@
     <orderEntry type="library" name="Maven: io.aeron:aeron-driver:1.2.5" level="project" />
     <orderEntry type="library" name="Maven: io.aeron:aeron-client:1.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.agrona:agrona:0.9.5" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-zeromq_2.11:2.3.16" level="project" />
-    <orderEntry type="library" name="Maven: org.spark-project.zeromq:zeromq-scala-binding_2.11:0.0.7-spark" level="project" />
-    <orderEntry type="library" name="Maven: net.java.dev.jna:jna:3.0.9" level="project" />
-    <orderEntry type="library" name="Maven: com.github.jnr:jnr-constants:0.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming-mqtt_2.11:1.6.3" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.akka:akka-cluster_2.11:2.4.20" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-sql_2.11:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.univocity:univocity-parsers:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-sketch_2.11:2.2.0" level="project" />
