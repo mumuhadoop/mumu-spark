@@ -80,18 +80,19 @@ OFF_HEAP | (experimental)	Similar to MEMORY_ONLY_SER, but store the data in off-
 - Accumulators。因为程序是在每一个机器独立执行的，所以没法保存一个全局变量。可以通过累加器（添加、获取数据）来实现计数器的功能。
 
 ### Stage DAG有向无环图
-spark提交job之后会把job分成多个stage，多个stage之间是有依赖关系的，正如前面所看到的的，stage0依赖于stage1，因此构成了有向无环图DAG。  
+spark提交job之后会把job分成多个stage，多个stage之间是有依赖关系的，正如前面所看到的的，stage0依赖于stage1，因此构成了有向无环图DAG。而且stage中的依赖分为窄依赖和宽依赖，窄依赖是一个worker节点的数据只能被一个worker使用，而宽依赖是一个worker节点的数据被多个worker使用。一般讲多个窄依赖归类为一个stage，方便与pipeline管道执行，而将以宽依赖分为一个stage。  
 
-![spark dag](https://raw.githubusercontent.com/mumuhadoop/mumu-spark/master/doc/images/core/spark-dag.png) 
+spark正式使用dag有向无环图来实现容错机制，当节点的数据丢失的时候，我们可以通过dag向父节点重新计算数据，这种容错机制成为lineage。  
+
+![spark core](https://raw.githubusercontent.com/mumuhadoop/mumu-spark/master/doc/images/core/spark-core.png) 
 
 ## spark sql
 
 ### parquet存储格式
-Apache	Parquet	is	a	columnar	data	storage	format,	specifically	designed	for	big	data	storage	and
-processing.	It	is	based	on	record	shredding	and	the	assembly	algorithm	from	the	Google	Dremel	paper.	In
-Parquet,data in	a	single	column	is	stored	contiguously.	The	columnar	format	gives	Parquet	some	unique
-benefits.For example,	if	you	have	a	table	with	100	columns	and	you	mostly	access	10	columns	in	a	rowbased	format,	you	will have to load all	the	100	columns,	as	the	granularity	level	is	at	the	row	level.	But,
-in	Parquet,you	will	only	need	to	load	10	columns.	Another	benefit	is	that	since	all	of	the	data	in	a	given column is	of	the	same	datatype	(by	definition),	compression	is	much	more	efficient。
+parquet是一款列式存储文件格式，parquet专为大数据而生的。当我们要存储的数据列非常多，而业务需求只是需要几列数据的时候，这时候parquet将能发挥重大作用，因为parquet是按照列的格式来存储数据（将相同的列的数据保存在一起），获取数据的时候可以仅仅加载需要列的数据，而不是将所有的列数据全部加载出来，大大较少了无用数据的负载。  
+parquet存储优点：
+- 列式存储，减少无用数据的加载。
+- 相同的列具有相同的数据类型，方便数据进行压缩处理。
 
 ## spark streaming
 

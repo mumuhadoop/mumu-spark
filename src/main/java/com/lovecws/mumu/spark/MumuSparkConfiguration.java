@@ -13,8 +13,11 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Arrays;
 
 /**
  * @author babymm
@@ -28,9 +31,10 @@ public class MumuSparkConfiguration {
 
     private static String SPARK_MASTER = "local[2]";
     //private static String SPARK_MASTER = "spark://192.168.11.25:7077";
+    //private static String SPARK_MASTER = "mesos://192.168.11.25:5050";
     //private static String SPARK_MASTER = "yarn";
+
     private static String HADOOP_URL = "hdfs://192.168.11.25:9000";
-    //private static String HADOOP_URL = "local";
 
     public synchronized JavaSparkContext javaSparkContext() {
         if (sparkContext == null) {
@@ -43,9 +47,6 @@ public class MumuSparkConfiguration {
             sparkContext = new JavaSparkContext(conf);
             if (!master.contains("local")) {
                 sparkContext.addJar(hadoopAddress() + "/mumu/spark/jar/mumu-spark.jar");
-            }
-            if (master.contains("yarn") && System.getenv("HADOOP_CONF_DIR") != null && System.getenv("YARN_CONF_DIR") != null) {
-                conf.set("HADOOP_CONF_DIR","D:\\hadoop");
             }
         }
         return sparkContext;
@@ -88,6 +89,13 @@ public class MumuSparkConfiguration {
         if (spark_master != null && !"".equals(spark_master)) {
             SPARK_MASTER = spark_master;
         }
+        if (SPARK_MASTER.contains("yarn") && System.getenv("HADOOP_CONF_DIR") == null && System.getenv("YARN_CONF_DIR") == null) {
+            String path = MumuSparkConfiguration.class.getResource("/hadoop").getPath();
+            System.setProperty("HADOOP_CONF_DIR", path);
+        }
+        if (SPARK_MASTER.contains("mesos")) {
+            System.setProperty("MESOS_NATIVE_JAVA_LIBRARY", "D:\\program\\mesos-1.5.0\\libmesos-1.5.0.so");
+        }
         return SPARK_MASTER;
     }
 
@@ -123,6 +131,40 @@ public class MumuSparkConfiguration {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        if (args.length < 2) {
+            System.err.println("usage [class mathod args]");
+            System.exit(-1);
+        }
+        String clazz = null, method = null;
+        Object[] objects = new Object[]{};
+        clazz = args[0];
+        method = args[1];
+        if (args.length > 2) {
+            objects = Arrays.copyOfRange(args, 2, args.length);
+        }
+        try {
+            Class aClass = Class.forName(clazz);
+            //对象必须要默认构造方法
+            Object newInstance = aClass.newInstance();
+            Method[] methods = aClass.getMethods();
+            for (Method method1 : methods) {
+                if (method1.getName().equalsIgnoreCase(method) && (method1.getParameterCount() == objects.length)) {
+                    method1.invoke(newInstance, objects);
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
         }
     }
 }

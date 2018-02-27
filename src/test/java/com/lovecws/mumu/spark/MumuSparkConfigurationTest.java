@@ -5,6 +5,8 @@ import org.apache.spark.sql.SQLContext;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.junit.Test;
 
+import java.util.Map;
+
 /**
  * @author babymm
  * @version 1.0-SNAPSHOT

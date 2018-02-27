@@ -1,9 +1,6 @@
 package com.lovecws.mumu.spark.streaming;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-import akka.actor.UntypedActor;
+import akka.actor.*;
 import com.lovecws.mumu.spark.MumuSparkConfiguration;
 import com.typesafe.config.ConfigFactory;
 import org.apache.commons.io.FileUtils;
@@ -93,8 +90,11 @@ public class AkkaActorSparkStreaming implements Serializable{
      */
     public void startAkka() {
         ActorSystem actorSystem = ActorSystem.create("streaming-actor-system-0", ConfigFactory.load("akka/client.conf"));
-        final ActorRef myAkkaClusterClient = actorSystem.actorOf(Props.create(AkkaClusterClient.class), "myAkkaClusterClient");
-        myAkkaClusterClient.tell("lovecws" + DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:SS"), ActorRef.noSender());
+        ActorSelection actorSelection = actorSystem.actorSelection("akka.tcp://streaming-actor-system-0@192.168.11.26:63064");
+        ActorRef actorRef = actorSelection.anchor();
+
+        //final ActorRef myAkkaClusterClient = actorSystem.actorOf(Props.create(AkkaClusterClient.class), "myAkkaClusterClient");
+        actorRef.tell("lovecws" + DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:SS"), ActorRef.noSender());
     }
 
     public static class AkkaClusterClient extends UntypedActor {

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.mesos:mesos:shaded-protobuf:1.0.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/mesos/mesos/1.0.0/mesos-1.0.0-shaded-protobuf.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/mesos/mesos/1.0.0/mesos-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/mesos/mesos/1.0.0/mesos-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
