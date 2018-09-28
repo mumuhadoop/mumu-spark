@@ -72,6 +72,7 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_2.11</artifactId>
             <version>${spark.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -90,6 +91,7 @@
             <groupId>org.apache.mesos</groupId>
             <artifactId>mesos</artifactId>
             <version>1.5.0</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- spark streaming -->
@@ -180,11 +182,13 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-mllib_2.11</artifactId>
             <version>${spark.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-mllib-local_2.11</artifactId>
             <version>2.2.0</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- spark graphx -->
@@ -192,6 +196,7 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-graphx_2.11</artifactId>
             <version>${spark.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.netty/netty-common -->
@@ -355,6 +360,27 @@
                     <aggregate>true</aggregate>
                     <encoding>UTF-8</encoding>
                 </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.lovecws.mumu.spark.MumuSparkConfiguration</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptor>src/main/resources/assembly.xml</descriptor>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

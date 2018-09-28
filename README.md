@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/mumuhadoop/mumu-spark/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/mumuhadoop/mumu-spark.svg?branch=master)](https://travis-ci.org/mumuhadoop/mumu-spark)
 [![codecov](https://codecov.io/gh/mumuhadoop/mumu-spark/branch/master/graph/badge.svg)](https://codecov.io/gh/mumuhadoop/mumu-spark)
+[![Documentation Status](https://readthedocs.org/projects/mumu-spark/badge/?version=latest)](https://mumu-spark.readthedocs.io/en/latest/?badge=latest)
 
 mumu-spark是一个学习项目，主要通过这个项目来了解和学习spark的基本使用方式和工作原理。mumu-spark主要包括弹性数据集rdd、spark sql、机器学习语言mlib、实时工作流streaming、图形数据库graphx。通过这些模块的学习，初步掌握spark的使用方式。
 
@@ -13,7 +14,7 @@ mumu-spark是一个多功能的快速计算系统，使用spark可以快速的�
 ## spark 安装方式
 
 ## spark core
-![spark core](https://raw.githubusercontent.com/mumuhadoop/mumu-spark/master/doc/images/core/spark-ecosystem.png) 
+![spark core](https://raw.githubusercontent.com/mumuhadoop/mumu-spark/master/docs/images/core/spark-ecosystem.png) 
 
 ### RDD弹性数据集
 RDD 是弹性分布式数据集的简称，是分布式只读且分区的集合对象，这些结合是弹性的，如果数据集一部分丢失了，可以对他们进行重建。具有自动容错、位置感知调度和记录数据的更新。  
@@ -84,7 +85,7 @@ spark提交job之后会把job分成多个stage，多个stage之间是有依赖�
 
 spark正式使用dag有向无环图来实现容错机制，当节点的数据丢失的时候，我们可以通过dag向父节点重新计算数据，这种容错机制成为lineage。  
 
-![spark core](https://raw.githubusercontent.com/mumuhadoop/mumu-spark/master/doc/images/core/spark-core.png) 
+![spark core](https://raw.githubusercontent.com/mumuhadoop/mumu-spark/master/docs/images/core/spark-core.png) 
 
 ## spark sql
 

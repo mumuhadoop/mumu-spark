@@ -1,0 +1,50 @@
+<assembly
+        xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+    <id>jar-with-dependencies</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>src/main/java</directory>
+            <outputDirectory>/</outputDirectory>
+            <excludes>
+                <exclude>*</exclude>
+            </excludes>
+        </fileSet>
+        <!-- 过滤项目的所有配置 因为配置文件已经打在jar包里 -->
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>/</outputDirectory>
+            <excludes>
+                <exclude>*</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <unpack>true</unpack>
+            <unpackOptions>
+                <excludes>
+                    <exclude>**/LICENSE*</exclude>
+                    <exclude>**/*VERSION</exclude>
+                    <exclude>**/NOTICE*</exclude>
+                    <exclude>**/rootdoc*</exclude>
+                    <exclude>**/log4j.properties</exclude>
+                </excludes>
+            </unpackOptions>
+            <outputDirectory>/</outputDirectory>
+            <useProjectArtifact>true</useProjectArtifact>
+        </dependencySet>
+    </dependencySets>
+    <files>
+        <file>
+            <source>src/main/resources/log4j.properties</source>
+            <outputDirectory>/</outputDirectory>
+            <destName>log4j.properties</destName>
+        </file>
+    </files>
+</assembly>  

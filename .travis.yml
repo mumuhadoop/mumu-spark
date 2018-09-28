@@ -7,7 +7,6 @@ env:
     - SPARK_MASTER=local[2]
     - HADOOP_URL=file:///
 
-
 sudo: required
 
 jdk:
