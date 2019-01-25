@@ -8,6 +8,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.SQLContext;
 import org.apache.spark.sql.SparkSession;
+import org.apache.spark.sql.hive.HiveContext;
 import org.apache.spark.streaming.Durations;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
@@ -70,7 +71,7 @@ public class MumuSparkConfiguration {
         return sqlContext;
     }
 
-    public synchronized SQLContext hiveContext() {
+    public synchronized HiveContext hiveContext() {
         String userDir = System.getProperty("user.dir");
         SparkSession sparkSession = SparkSession
                 .builder()
@@ -80,8 +81,8 @@ public class MumuSparkConfiguration {
                 .config("spark.driver.allowMultipleContexts", true)
                 .enableHiveSupport()
                 .getOrCreate();
-        SQLContext sqlContext = new SQLContext(sparkSession);
-        return sqlContext;
+        HiveContext hiveContext = new HiveContext(sparkSession);
+        return hiveContext;
     }
 
     public String getMaster() {

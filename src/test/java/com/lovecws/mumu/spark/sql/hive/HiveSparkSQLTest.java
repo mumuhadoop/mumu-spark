@@ -14,4 +14,9 @@ public class HiveSparkSQLTest {
     public void hive(){
         new HiveSparkSQL().hive();
     }
+
+    @Test
+    public void apk(){
+        new HiveSparkSQL().apk();
+    }
 }

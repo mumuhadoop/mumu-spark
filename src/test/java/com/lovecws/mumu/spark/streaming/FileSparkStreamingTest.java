@@ -17,7 +17,7 @@ public class FileSparkStreamingTest {
 
     @Test
     public void streaming() {
-        sparkStreaming.fileStreaming("E:\\mumu\\spark\\streaming\\file", 10l);
+        sparkStreaming.fileStreaming("D:\\data\\sina\\hunews", 10l);
     }
 
     @Test
