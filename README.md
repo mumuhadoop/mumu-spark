@@ -25,7 +25,7 @@ RDD 提供了两种基本操作
 
 #### RDD数据转换
 Transformation |	Meaning
-//---------------|----------
+---------------|----------
 map(func)	| Return a new distributed dataset formed by passing each element of the source through a function func.
 filter(func)	| Return a new dataset formed by selecting those elements of the source on which func returns true.
 flatMap(func)	| Similar to map, but each input item can be mapped to 0 or more output items (so func should return a Seq rather than a single item).
@@ -49,7 +49,7 @@ repartitionAndSortWithinPartitions(partitioner) |	Repartition the RDD according 
 
 #### RDD数据操作
 Action |	Meaning
-//--- | ---
+--- | ---
 reduce(func) |	Aggregate the elements of the dataset using a function func (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel.
 collect() |	Return all the elements of the dataset as an array at the driver program. This is usually useful after a filter or other operation that returns a sufficiently small subset of the data.
 count() |	Return the number of elements in the dataset.
@@ -65,7 +65,7 @@ foreach(func) |	Run a function func on each element of the dataset. This is usua
 
 #### RDD存储等级
 Storage Level |	Meaning
-//--- | ---
+--- | ---
 MEMORY_ONLY	Store | RDD as deserialized Java objects in the JVM. If the RDD does not fit in memory, some partitions will not be cached and will be recomputed on the fly each time they're needed. This is the default level.
 MEMORY_AND_DISK	| Store RDD as deserialized Java objects in the JVM. If the RDD does not fit in memory, store the partitions that don't fit on disk, and read them from there when they're needed.
 MEMORY_ONLY_SER (Java and Scala)	| Store RDD as serialized Java objects (one byte array per partition). This is generally more space-efficient than deserialized objects, especially when using a fast serializer, but more CPU-intensive to read.
