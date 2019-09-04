@@ -45,4 +45,12 @@ public class MumuSparkConfigurationTest {
     public void uploadJar() {
         sparkConfiguration.uploadJar();
     }
+
+    public static void main(String[] args) {
+        String str="B97F64587D05AC52\t\t\t\t\t\t\t\t\tSMTP\tMail\tSMTP\t61.187.88.126\tFFFFFFFFFFFFFFFF\t27851\t\t220.181.15.113\tFFFFFFFFFFFFFFFF\t25\t246\t210\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tB97F64587D05AC52\tSMTP\t0\t0\t0\t0\t1\t0\t4\t0\t0\tXDR\t1556066695\t1556066860\t101405\t101405000\t\t\t\t\t\t\t\t\t\n";
+        String[] split = str.split("\\t+");
+        for (String s:split){
+            System.out.println(s);
+        }
+    }
 }

@@ -20,45 +20,11 @@ The code is open source, and `available on GitHub`_.
 .. _Mercurial: https://www.mercurial-scm.org/
 .. _available on GitHub: https://github.com/mumuhadoop/mumu-spark
 
-* :ref:`spark-user-docs`
-* :ref:`spark-core-docs`
-* :ref:`spark-feature-docs`
-* :ref:`spark-faq-docs`
-
-.. _spark-user-docs:
-
 .. toctree::
-   :maxdepth: 2
-   :caption:  spark入门
+      :maxdepth: 2
+      :numbered: 8
 
-   user/desc
-   user/versions
-
-.. _spark-core-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption:  spark核心
-
-   core/dag
-
-.. _spark-feature-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-   :caption: spark框架
-
-   feature/sql
-   feature/streaming
-   feature/mllib
-   feature/graphx
-
-.. _spark-faq-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-   :caption: spark常见问题
-
-   faq/common
+      user
+      core
+      feature
+      faq

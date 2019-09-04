@@ -47,7 +47,12 @@ public class SparkRDDOperationTest {
 
     @Test
     public void textFile() {
-        sparkRDDOperation.textFile("D:\\data\\webmagic\\finance\\20171016111803.json");
+        sparkRDDOperation.textFile("E:/data/hive/min=89");
+    }
+
+    @Test
+    public void wholeTextFiles() {
+        sparkRDDOperation.wholeTextFiles("E:\\data\\hive");
     }
 
     @Test

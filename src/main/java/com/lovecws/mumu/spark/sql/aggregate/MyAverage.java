@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * @author babymm
  * @version 1.0-SNAPSHOT
- * @Description: 用户自定义函数
+ * @Description: 用户自定义聚合函数
  * @date 2018-02-06 15:30
  */
 public class MyAverage extends UserDefinedAggregateFunction {

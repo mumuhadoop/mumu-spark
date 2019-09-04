@@ -6,10 +6,12 @@ import com.lovecws.mumu.spark.rdd.accumulator.MyVectorAccumulator;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.spark.Accumulator;
 import org.apache.spark.AccumulatorParam;
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
 import org.apache.spark.storage.StorageLevel;
+import scala.Tuple2;
 
 import java.util.List;
 
@@ -66,6 +68,7 @@ public class SparkRDDOperation {
      */
     public void textFile(String filePath) {
         JavaSparkContext sparkContext = new MumuSparkConfiguration().javaSparkContext();
+        sparkContext.addFile(filePath,true);
         JavaRDD<String> javaRDD = sparkContext.textFile(filePath);
         //缓存数据集
         javaRDD.persist(StorageLevel.MEMORY_ONLY());
@@ -73,6 +76,22 @@ public class SparkRDDOperation {
         List<String> collect = javaRDD.collect();
         for (String str : collect) {
             System.out.println(str);
+        }
+        sparkContext.close();
+    }
+
+    /**
+     * 从文件中读取记录
+     */
+    public void wholeTextFiles(String filePath) {
+        JavaSparkContext sparkContext = new MumuSparkConfiguration().javaSparkContext();
+        JavaPairRDD<String, String> javaPairRDD = sparkContext.wholeTextFiles(filePath, 2);
+        //缓存数据集
+        javaPairRDD.persist(StorageLevel.MEMORY_ONLY());
+        System.out.println(javaPairRDD.count());
+        List<Tuple2<String, String>> collect = javaPairRDD.collect();
+        for (Tuple2 str : collect) {
+            System.out.println(str._1 + "_" + str._2);
         }
         sparkContext.close();
     }
@@ -127,6 +146,7 @@ public class SparkRDDOperation {
 
     /**
      * 以text的形式保存文件
+     *
      * @param list
      */
     public void saveAsTextFile(List<Object> list) {

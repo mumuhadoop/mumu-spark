@@ -7,7 +7,9 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.hive.HiveContext;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * @author babymm
@@ -39,5 +41,33 @@ public class HiveSparkSQL implements Serializable {
                 }
             }
         });
+
+        Dataset<Row> dataset = hiveContext.sql("select *from t1 where ds='2019-08-08'");
+
+        List list=new ArrayList<>();
+
+        dataset.foreachPartition(new ForeachPartitionFunction<Row>() {
+
+            @Override
+            public void call(Iterator<Row> rowIterator) throws Exception {
+
+
+                while (rowIterator.hasNext()) {
+                    Row row = rowIterator.next();
+                    //TODO handle
+                    list.add(row);
+
+                    if(list.size()>=1000){
+                        //batchsave
+                    }
+
+
+                }
+            }
+        });
+
+        Dataset<Row> externalTable = hiveContext.createExternalTable("", "");
+
+        //batchsave
     }
 }

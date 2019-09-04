@@ -39,7 +39,7 @@ public class CreateDataSetFromStruct {
             for (int i = 0; i < 10000; i++) {
                 rows.add(new GenericRow(new Object[]{"ganliang" + i, 27 + i, "男" + i, new Date(DateUtils.parseDate("1990-07-07", "yyyy-MM-dd").getTime())}));
                 rows.add(new GenericRow(new Object[]{"cws" + i, 25 + i, "女" + i, new Date(DateUtils.parseDate("1992-02-30", "yyyy-MM-dd").getTime())}));
-                rows.add(new GenericRow(new Object[]{"youzi" + i, 0 + i, "男" + i, new Date(DateUtils.parseDate("2017-02-20 10:43", "yyyy-MM-dd HH:mm").getTime())}));
+                rows.add(new GenericRow(new Object[]{"youzi" + i, i, "男" + i, new Date(DateUtils.parseDate("2017-02-20 10:43", "yyyy-MM-dd HH:mm").getTime())}));
             }
         } catch (ParseException e) {
             e.printStackTrace();

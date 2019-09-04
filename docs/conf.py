@@ -28,6 +28,8 @@ author = u'ganliang'
 version = u'0.0.1'
 # The full version, including alpha/beta/rc tags
 release = u'0.0.1'
+# 主题 sphinx_rtd_theme、babymm、alabaster、classic、sphinxdoc、scrolls、agogo、traditional、nature、haiku、pyramid、bizstyle
+THEME_TOPIC = "sphinx_rtd_theme"
 
 # -- General configuration ---------------------------------------------------
 
@@ -88,6 +90,52 @@ html_theme_options = {
     'logo_only': True,
     'display_version': False,
 }
+
+html_favicon = 'icon.png'
+
+if THEME_TOPIC == "babymm":
+    html_theme_path = ['./themes']
+    html_theme = 'babymm'
+
+elif THEME_TOPIC == "sphinx_rtd_theme":
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    html_theme_options = {
+        'analytics_id': 'UA-XXXXXXX-1',
+        'logo_only': True,
+        'display_version': True,
+        'prev_next_buttons_location': 'bottom',
+        'style_external_links': False,
+        # 'style_nav_header_background': 'white',
+        'collapse_navigation': True,
+        'sticky_navigation': True,
+        'navigation_depth': 4,
+        'includehidden': True,
+        'titles_only': False
+    }
+    html_css_files = [
+        'css/custom.css',
+    ]
+elif THEME_TOPIC == "alabaster":
+    html_theme = 'alabaster'
+elif THEME_TOPIC == "classic":
+    html_theme = 'classic'
+elif THEME_TOPIC == "sphinxdoc":
+    html_theme = 'sphinxdoc'
+elif THEME_TOPIC == "scrolls":
+    html_theme = 'scrolls'
+elif THEME_TOPIC == "agogo":
+    html_theme = 'agogo'
+elif THEME_TOPIC == "traditional":
+    html_theme = 'traditional'
+elif THEME_TOPIC == "nature":
+    html_theme = 'nature'
+elif THEME_TOPIC == "haiku":
+    html_theme = 'haiku'
+elif THEME_TOPIC == "pyramid":
+    html_theme = 'pyramid'
+elif THEME_TOPIC == "bizstyle":
+    html_theme = 'bizstyle'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.

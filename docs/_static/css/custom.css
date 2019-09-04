@@ -1,0 +1,17 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+    color: #222222;
+}
+
+.wy-nav-content{
+    max-width:100%;
+    width:100%;
+}
+.wy-nav-content .rst-content{
+    max-width:100%;
+    width:100%;
+}
+
+.wy-breadcrumbs li a{
+    display:none;
+}

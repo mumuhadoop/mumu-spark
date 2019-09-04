@@ -26,8 +26,7 @@ public class CreateDataSetFromText {
         JavaRDD<Object> objectJavaRDD = javaRDD.map(new Function<String, Object>() {
             @Override
             public Object call(final String line) throws Exception {
-                String[] split = line.split(",");
-                return split;
+                return line.split(",");
             }
         });
         Dataset<Row> dataFrame = sqlContext.createDataFrame(objectJavaRDD, String[].class);
