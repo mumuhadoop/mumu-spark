@@ -17,16 +17,19 @@ mumu-spark是一个多功能的快速计算系统，使用spark可以快速的�
 ![spark core](https://raw.githubusercontent.com/mumuhadoop/mumu-spark/master/docs/images/core/spark-ecosystem.png) 
 
 ### RDD弹性数据集
-RDD 是弹性分布式数据集的简称，是分布式只读且分区的集合对象，这些结合是弹性的，如果数据集一部分丢失了，可以对他们进行重建。具有自动容错、位置感知调度和记录数据的更新。  
+
+RDD 是弹性分布式数据集的简称，是分布式只读且分区的集合对象，这些结合是弹性的，如果数据集一部分丢失了，可以对他们进行重建。具有自动容错、位置感知调度和记录数据的更新。
 
 RDD 提供了两种基本操作
+
 - transformations 数据转换，如map、flatMap等。
 - actions 数据操作，如reduce、count、collect等
 
 #### RDD数据转换
+
 Transformation |	Meaning
----------------|----------
-map(func)	| Return a new distributed dataset formed by passing each element of the source through a function func.
+--- | ---
+map(func)	|  Return a new distributed dataset formed by passing each element of the source through a function func.
 filter(func)	| Return a new dataset formed by selecting those elements of the source on which func returns true.
 flatMap(func)	| Similar to map, but each input item can be mapped to 0 or more output items (so func should return a Seq rather than a single item).
 mapPartitions(func) |	Similar to map, but runs separately on each partition (block) of the RDD, so func must be of type Iterator<T> => Iterator<U> when running on an RDD of type T.
@@ -48,6 +51,7 @@ repartition(numPartitions) |	Reshuffle the data in the RDD randomly to create ei
 repartitionAndSortWithinPartitions(partitioner) |	Repartition the RDD according to the given partitioner and, within each resulting partition, sort records by their keys. This is more efficient than calling repartition and then sorting within each partition because it can push the sorting down into the shuffle machinery.
 
 #### RDD数据操作
+
 Action |	Meaning
 --- | ---
 reduce(func) |	Aggregate the elements of the dataset using a function func (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel.
@@ -64,7 +68,9 @@ countByKey() |	Only available on RDDs of type (K, V). Returns a hashmap of (K, I
 foreach(func) |	Run a function func on each element of the dataset. This is usually done for side effects such as updating an Accumulator or interacting with external storage systems. Note: modifying variables other than Accumulators outside of the foreach() may result in undefined behavior. See Understanding closures for more details.
 
 #### RDD存储等级
+
 Storage Level |	Meaning
+
 --- | ---
 MEMORY_ONLY	Store | RDD as deserialized Java objects in the JVM. If the RDD does not fit in memory, some partitions will not be cached and will be recomputed on the fly each time they're needed. This is the default level.
 MEMORY_AND_DISK	| Store RDD as deserialized Java objects in the JVM. If the RDD does not fit in memory, store the partitions that don't fit on disk, and read them from there when they're needed.

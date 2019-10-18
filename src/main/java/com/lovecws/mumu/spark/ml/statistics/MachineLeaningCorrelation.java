@@ -1,10 +1,10 @@
 package com.lovecws.mumu.spark.ml.statistics;
 
 import com.lovecws.mumu.spark.MumuSparkConfiguration;
+import org.apache.commons.math3.stat.inference.ChiSquareTest;
 import org.apache.spark.ml.linalg.VectorUDT;
 import org.apache.spark.ml.linalg.Vectors;
-import org.apache.spark.ml.stat.ChiSquareTest;
-import org.apache.spark.ml.stat.Correlation;
+import org.apache.spark.mllib.stat.correlation.Correlation;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.RowFactory;
@@ -41,11 +41,11 @@ public class MachineLeaningCorrelation {
 
         Dataset<Row> df = sqlContext.createDataFrame(data, schema);
 
-        Dataset<Row> corr = Correlation.corr(df, "features", "pearson");
-        corr.show(false);
-
-        Row r1 = corr.head();
-        System.out.println("Pearson correlation matrix:\n" + r1.get(0).toString());
+//        Dataset<Row> corr = Correlation.corr(df, "features", "pearson");
+//        corr.show(false);
+//
+//        Row r1 = corr.head();
+//        System.out.println("Pearson correlation matrix:\n" + r1.get(0).toString());
     }
 
     public void spearman() {
@@ -64,8 +64,8 @@ public class MachineLeaningCorrelation {
 
         Dataset<Row> df = sqlContext.createDataFrame(data, schema);
 
-        Row r2 = Correlation.corr(df, "features", "spearman").head();
-        System.out.println("Spearman correlation matrix:\n" + r2.get(0).toString());
+//        Row r2 = Correlation.corr(df, "features", "spearman").head();
+//        System.out.println("Spearman correlation matrix:\n" + r2.get(0).toString());
     }
 
     public void statistics() {
@@ -86,9 +86,9 @@ public class MachineLeaningCorrelation {
         });
 
         Dataset<Row> df = sqlContext.createDataFrame(data, schema);
-        Row r = ChiSquareTest.test(df, "features", "label").head();
-        System.out.println("pValues: " + r.get(0).toString());
-        System.out.println("degreesOfFreedom: " + r.getList(1).toString());
-        System.out.println("statistics: " + r.get(2).toString());
+//        Row r = ChiSquareTest.test(df, "features", "label").head();
+//        System.out.println("pValues: " + r.get(0).toString());
+//        System.out.println("degreesOfFreedom: " + r.getList(1).toString());
+//        System.out.println("statistics: " + r.get(2).toString());
     }
 }

@@ -16,6 +16,7 @@
         <spark.version>2.2.0</spark.version>
         <hadoop.version>2.8.1</hadoop.version>
         <akka.version>2.5.3</akka.version>
+        <mesos.version>1.5.2</mesos.version>
     </properties>
 
     <dependencies>
@@ -90,7 +91,7 @@
         <dependency>
             <groupId>org.apache.mesos</groupId>
             <artifactId>mesos</artifactId>
-            <version>1.5.0</version>
+            <version>${mesos.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -171,11 +172,6 @@
             <version>${spark.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.38</version>
-        </dependency>
 
         <!-- spark mllib -->
         <dependency>
@@ -187,7 +183,7 @@
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-mllib-local_2.11</artifactId>
-            <version>2.2.0</version>
+            <version>${spark.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -232,7 +228,22 @@
             <version>3.6.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.gbase</groupId>
+            <artifactId>gbase-connector-java</artifactId>
+            <version>8.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.5</version>
+        </dependency>
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
     </dependencies>
 
     <!-- 组织机构 -->
