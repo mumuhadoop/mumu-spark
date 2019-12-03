@@ -15,10 +15,10 @@ public class DatabaseDataMigrateTest {
         DatabaseDataMigrate databaseDataMigrate = new DatabaseDataMigrate();
         //databaseDataMigrate.pg2gbase("tb_syslog_corp_dict");
         //databaseDataMigrate.pg2gbase("tb_cnvd");
-        //databaseDataMigrate.pg2gbase("tb_loophole");
+        databaseDataMigrate.pg2gbase("tb_loophole");
         //databaseDataMigrate.pg2gbase("tb_protocol_info");
         //databaseDataMigrate.pg2gbase("tb_protocol_device");
         //databaseDataMigrate.pg2gbase("tb_protocol_service");
-        databaseDataMigrate.pg2gbase("tb_protocol_vendor");
+//        databaseDataMigrate.pg2gbase("tb_protocol_vendor");
     }
 }

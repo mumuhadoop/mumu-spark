@@ -54,7 +54,7 @@ public class DatabaseDataMigrate implements Serializable {
             dataset.foreachPartition(new ForeachPartitionFunction<Row>() {
                 @Override
                 public void call(Iterator<Row> iterator) throws Exception {
-                    Connection connection = DriverManager.getConnection("jdbc:gbase://172.31.134.249:5258/ads", "sysdba", "GBase8sV8316");
+                    Connection connection = DriverManager.getConnection("jdbc:gbase://172.31.134.249:5258/test", "sysdba", "GBase8sV8316");
                     PreparedStatement preparedStatement = null;
                     AtomicInteger counter = new AtomicInteger(0);
 
