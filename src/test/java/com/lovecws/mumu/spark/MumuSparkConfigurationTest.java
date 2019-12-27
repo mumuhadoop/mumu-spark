@@ -6,6 +6,7 @@ import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import org.junit.Test;
 
 import java.util.Map;
+import java.util.concurrent.Executors;
 
 /**
  * @author babymm
